@@ -1,16 +1,26 @@
-@import url(https://db.onlinewebfonts.com/c/4ba6a0aa699286a040c28bf72ea53fa3?family=Dunkin+Sans+Book);
-
-@import url('https://fonts.cdnfonts.com/css/dunkin');
+@import url('https://db.onlinewebfonts.com/c/4ba6a0aa699286a040c28bf72ea53fa3?family=Dunkin+Sans+Book');
+@import url('https://db.onlinewebfonts.com/c/ac415bee855b42915c6fb198747e34ac?family=Dunkin+Sans+Display');
 
 @font-face {
     font-family: "Dunkin Sans Book";
     src: url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.eot");
-    src: url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.svg#Dunkin Sans Book")format("svg");
+    src: url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.svg#Dunkin Sans Book") format("svg");
 }
+
+@font-face {
+    font-family: "Dunkin Sans Display";
+    src: url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.eot");
+    src: url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.svg#Dunkin Sans Display") format("svg");
+}
+
 
 * {
     margin: 0;
@@ -18,14 +28,26 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p{
-    font-family: "Dunkin sans";
+h1,
+h2,
+h3,
+h4{
+    font-family: "Dunkin sans display";
     text-transform: uppercase;
+    color: white;
+    font-size: 2.8em;
 }
 
-a {
-    font-family: "Dunkin sans";
-    text-transform: uppercase;
+p {
+    font-family: "Dunkin sans book";
+    font-size: 0.8em;
+}
+
+.home main > a{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
 }
 
 header div {
@@ -35,21 +57,23 @@ header div {
 }
 
 header div img:first-of-type {
-    max-width: 5%;
-    height: auto;
+    width: 4%;
+    max-width: none;
+    height: 100%;
+    margin-top: 2.1em;
 }
 
 header div img:nth-of-type(2) {
     max-height: 26px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 header p {
     padding: 1em;
     background: #fe6d01;
     text-align: center;
-    font-family: "dunkin sans book";
     color: white;
-    font-size: 0.8em;
     text-transform: none;
 }
 
@@ -59,9 +83,483 @@ header p a {
     font-family: "dunkin sans book";
 }
 
-header > a{
+header > a {
     position: absolute;
     position: fixed;
+}
+
+.home section{
+    margin: 1.4em;
+}
+
+/* WE LOVE COFFEE KADER HOMEPAGINA */
+.home section:first-of-type {
+    position: relative;
+    overflow: hidden;
+}
+
+.achtergrond {
+    width: 100%;
+    background-color: #ddbd8e;
+    z-index: 0;
+    border-radius: 20px;
+    height: 53vh;
+    object-fit: cover;
+}
+
+.home section:first-of-type h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+}
+
+.home section:first-of-type img {
+    display: block;
+}
+
+.home section:first-of-type img:nth-of-type(n+2) {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items: flex-end;
+    width: 40vw;
+}
+
+.home section:first-of-type img:nth-of-type(2) {
+    left: calc(50% - 80px);
+    /* Plaats de eerste afbeelding links */
+}
+
+.home section:first-of-type img:nth-of-type(3) {
+    left: 50%;
+    /* Plaats de middelste afbeelding in het midden */
+    z-index: 2;
+    top: 40%;
+}
+
+.home section:first-of-type img:nth-of-type(4) {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform:translate(50% + 80px);
+    /* Centreert deze afbeelding horizontaal */
+}
+
+/*  BESTEL MENU HOMEPAGINA */
+.home section:nth-of-type(2) {
+    background-color: #f20c90;
+    border-radius: 20px;
+    padding: 1em 1em 1.3em;
+    position: relative;
+    z-index: 10;
+}
+
+.home section:nth-of-type(2) h3 {
+    text-align: center;
+}
+
+.home section:nth-of-type(2) p {
+    text-align: left;
+    margin: 4vw 0 4vw;
+    text-transform: none;
+    color: white;
+}
+
+.home section:nth-of-type(2) > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home section:nth-of-type(2) a {
+    flex: 1;
+    padding: 0.8em 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 0.88em;
+    font-family: "dunkin sans display";
+    text-transform: uppercase;
+}
+
+.home section:nth-of-type(2) a:first-of-type {
+    background-color: white;
+    color: #f20c90;
+}
+
+.home section:nth-of-type(2) a:last-of-type {
+    background-color: #f950ad;
+    color: white;
+}
+
+
+/* NIEUW! HOMEPAGINA */
+
+.home section:nth-of-type(3) {
+    background-color: #99d6ea;
+    border-radius: 20px;
+    padding: 1em 1em 19em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    z-index: 10; 
+}
+
+.home section:nth-of-type(3) h3 {
+    color: white;
+}
+
+.home section:nth-of-type(3) img {
+    position: absolute;
+    top: 10%;
+    width: 120%;
+}
+
+/* BESTEL DUNKIN ONLINE HOMEPAGINA */
+
+.home section:nth-of-type(4) h2{
+    display: block;
+    line-height: 1;
+    margin-left: 0.3em;
+    font-size: 3.7em;
+    margin-top: 1.7em;
+}
+
+.home section:nth-of-type(4) h2 span:nth-of-type(1), 
+.home section:nth-of-type(4) h2 span:nth-of-type(3) {
+    color: #f20c90;
+}
+
+.home section:nth-of-type(4) h2 span:nth-of-type(2) {
+    color: #fe6d01; 
+}
+
+.home section:nth-of-type(4) {
+    background-color: whitesmoke;
+    margin: 0;
+    position: relative; /* Zorg dat section 4 ook een positionering heeft voor juiste layering */
+    z-index: 1; /* Lagere z-index dan section 3 om erachter te blijven */
+    padding-bottom: 2em;
+}
+
+.home main > div{
+    background-color: whitesmoke;
+    padding: 9.5em;
+    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    position: absolute;
+    width: 100%;
+}
+
+.home section:nth-of-type(4) > div:nth-of-type(1){
+    background-color: whitesmoke;
+    padding-top: 35em;
+    position: absolute;
+    width: 100%;
+    top: -35em;
+    left: 0;
+    z-index: 5;
+}
+
+.home section:nth-of-type(4) ul li {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 1.2em;
+    border-radius: 20px;
+    margin: 0.8em;
+}
+
+.home section:nth-of-type(4) ul li img {
+    width: 15vw;
+    padding: 0.9em;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+
+.home section:nth-of-type(4) ul li img{
+    background-color: #f20c90;
+}
+
+.home section:nth-of-type(4) ul li:nth-of-type(2) img{
+    background-color: #fe6d01;
+}
+
+.home section:nth-of-type(4) ul li h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #f20c90;
+    width: 70%;
+}
+
+.home section:nth-of-type(4) ul li p {
+    margin: 0;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.home section:nth-of-type(4) a,
+.home section:nth-of-type(6) a,
+.home section:nth-of-type(7) a,
+nav ul li a,
+.home main > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "dunkin sans display";
+    padding: 1.2em;
+    border-radius: 30px;
+    background-color: #fe6d01;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.home section:nth-of-type(4) a{
+    margin: 1em;
+}
+
+/* APP JIJ 'M AL? HOMEPAGINA */
+
+.home section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    padding-bottom: 12em;
+    border-radius: 20px;
+    background-color: #71c5e8;
+    position: relative; /* Nodig voor de positionering van de afbeelding */
+    overflow: hidden; /* Verbergt alles buiten de grenzen van de container */
+}
+
+.home section:nth-of-type(5) h2,
+.home section:nth-of-type(5) h4,
+.home section:nth-of-type(5) p {
+    margin: 0.5em 0;
+    width: 90%;
+}
+
+.home section:nth-of-type(5) img:nth-of-type(1),
+.home section:nth-of-type(5) img:nth-of-type(2) {
+    margin: 0.8em 0;
+    width: 80%;
+}
+
+.home section:nth-of-type(5) img:nth-of-type(3) {
+    width: 230vw;
+    position: absolute;
+    bottom: -42%; /* Verplaatst de afbeelding buiten de sectie */
+}
+
+.home section:nth-of-type(5) h4{
+    font-size: 1.3em;
+}
+
+.home section:nth-of-type(5) p{
+    font-size: 1em;
+    line-height: 1.7;
+    width: 100%;
+    color: white;
+}
+
+/* HEROPENING BATAVIASTAD HOMEPAGINA */
+
+.home section:nth-of-type(6) {
+    position: relative; /* Zorgt ervoor dat de absolute positionering binnen deze sectie werkt */
+}
+
+.home section:nth-of-type(6) h2 {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #f20c90;
+}
+
+.home section:nth-of-type(6) p,
+.home section:nth-of-type(7) p {
+    font-size: 1em;
+    color: #aaa;
+}
+
+.home section:nth-of-type(6) img:nth-of-type(1) {
+    width: 100%;
+    border-radius: 20px;
+    Object-fit: cover;
+    height: 100vw;
+}
+
+.home section:nth-of-type(6) img:nth-of-type(2) {
+    background-color: #fe6d01;
+    border-radius: 50%;
+    padding: 1em;
+    max-width: 28%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+/*DUNKIN START MET GLUTENVRIJE DONUTS HOMEPAGINA */
+.home section:nth-of-type(7) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.home section:nth-of-type(7) h2 {
+    font-size: 2em;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    color: #fe6d01;
+    width: 94%;
+}
+
+.home section:nth-of-type(7) p {
+    text-align: left; /* Links uitlijnen */
+    width: 94%; /* Zelfde breedte als de h2 voor consistentie */
+}
+
+.home section:nth-of-type(7) img:nth-of-type(1) {
+    margin-top: 5em;
+    width: 50%; 
+    position: relative;
+}
+
+.home section:nth-of-type(7) img:nth-of-type(2) {
+    background-color: #f20c90;
+    border-radius: 50%;
+    padding: 1em;
+    max-width: 28%;
+    position: absolute;
+    left: 60%;
+    transform: translate(-10%, 260%);
+}
+
+
+/* DD NIEUWS */
+
+
+/* STORE FINDER */
+
+section:nth-of-type(9) {
+    background-color: #f20c90;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-of-type(9) img:nth-of-type(1){
+    border-radius: 50%;
+    border: solid;
+    border-color: white;
+    border-width: 0.8em;
+    width: 70vw;
+    height: 70vw;
+    object-fit: cover;
+    position: relative;
+}
+
+section:nth-of-type(9) img:nth-of-type(2){
+    border-radius: 50%;
+    background-color: white;
+    width: 30%;
+}
+
+section:nth-of-type(9) h4{
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    text-align: center;
+    width: 70%;
+}
+
+section:nth-of-type(9) h2{
+    text-align: center;
+    width: 70%;
+    line-height: 1;
+    margin: 1em;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff6e0c;
+    color: white;
+}
+
+footer > img {
+    max-width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    transform: rotate(-20deg); 
+    filter: drop-shadow(10px 10px 8px #aaa);
+    position: relative;
+    top: -10%;
+    transform: rotate(-20deg);
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 1.4em;
+}
+
+footer nav ul li a {
+    background-color: rgba(232,64,46,.75);
+    width: 100%;
+} 
+
+footer div {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div a {
+    margin: 0 0.5em;
+}
+
+footer p{
+    text-align: center;
+    margin: 1em 0;
+    background-color: whitesmoke;
+    color: #aaa;
+    font-size: 0.8em;
+    padding: 2em 0 13em;
+}
+
+footer p a{
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer div:nth-child(1) {
+    border-radius: 50%;
+    background-color: white;
+}
+
+footer div a img {
+    padding: 0.5em;
+    width: 10vw;
+    height: 10vw;
+    object-fit: contain;
 }
