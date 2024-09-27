@@ -43,11 +43,12 @@ p {
     font-size: 0.8em;
 }
 
-.home main > a{
+main > div a{
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 20;
+
 }
 
 header div {
@@ -88,9 +89,25 @@ header > a {
     position: fixed;
 }
 
-.home section{
+.home main {
+    margin: 0;
+}
+
+.home main > section:nth-of-type(1),
+.home main > section:nth-of-type(2),
+.home main > section:nth-of-type(3),
+.home main > section:nth-of-type(5),
+.home main > section:nth-of-type(6),
+.home main > section:nth-of-type(7),
+.home main > section:nth-of-type(9){
     margin: 1.4em;
 }
+
+/* .home section:nth-of-type(n+4) {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+} */
 
 /* WE LOVE COFFEE KADER HOMEPAGINA */
 .home section:first-of-type {
@@ -249,7 +266,7 @@ header > a {
     padding-bottom: 2em;
 }
 
-.home main > div{
+.home main > div:first-of-type{
     background-color: whitesmoke;
     padding: 9.5em;
     border-bottom-right-radius: 3em;
@@ -309,7 +326,7 @@ header > a {
 .home section:nth-of-type(6) a,
 .home section:nth-of-type(7) a,
 nav ul li a,
-.home main > a{
+main > div a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +355,7 @@ nav ul li a,
     padding-bottom: 12em;
     border-radius: 20px;
     background-color: #71c5e8;
-    position: relative; /* Nodig voor de positionering van de afbeelding */
+    position: relative; /*Nodig voor de positionering van de afbeelding*/
     overflow: hidden; /* Verbergt alles buiten de grenzen van de container */
 }
 
@@ -426,7 +443,7 @@ nav ul li a,
 
 .home section:nth-of-type(7) p {
     text-align: left; /* Links uitlijnen */
-    width: 94%; /* Zelfde breedte als de h2 voor consistentie */
+    width: 94%;
 }
 
 .home section:nth-of-type(7) img:nth-of-type(1) {
@@ -562,4 +579,162 @@ footer div a img {
     width: 10vw;
     height: 10vw;
     object-fit: contain;
+}
+
+
+/* ABOUT PAGINA */
+
+.verhaal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddbd8e;
+    padding-bottom: 10em;
+    position: relative;
+}
+
+.verhaal h1{
+    font-size: 1.3em;
+    margin: 1em;
+}
+
+.verhaal h2{
+    text-align: center;
+    line-height: 1;
+}
+
+.verhaal h1,
+.verhaal h2{
+    color: #814c0f;
+}
+
+.verhaal img{
+    width: 50vw;
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+    z-index: 1;
+}
+
+.dunkin img{
+    border-radius: 20px;
+    width: 90vw;
+}
+
+.dunkin {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10em 1.4em;
+}
+
+.dunkin h2{
+    color:#f20c90;
+}
+
+article {
+    margin: 1.4em;
+}
+
+article img{
+    width: 90vw;
+    border-radius: 20px;
+}
+
+article h2{
+    font-size: 2em;
+    color: #f20c90;
+    margin: 0.5em 0;
+}
+
+article p{
+    color:#aaa;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.dunkinthedonut p:first-of-type,
+.dunkinthedonut p:nth-of-type(3){
+    color: #fe6d01;
+}
+
+.dunkinthedonut p:nth-of-type(2),
+.dunkinthedonut p:nth-of-type(4){
+    color: #f20c90;
+}
+
+.dunkinthedonut p{
+    font-size: 5em;
+    font-family: "Dunkin sans display";
+    width: 100%; /* Maak de container zo breed als de webpagina */
+    white-space: nowrap; /* Zorg dat de tekst in één regel doorloopt zonder op een nieuwe regel te springen */
+    transform: rotate(8deg);
+    line-height: 1;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.dunkinthedonut{
+    margin: 10em 0;
+}
+
+.vroeger,
+.oprichter{
+    margin: 1.4em;
+}
+
+.vroeger img:first-of-type,
+.oprichter img:first-of-type{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.vroeger img:nth-of-type(2),
+.oprichter img:nth-of-type(2){
+    background-color: #fe6d01;
+    border-radius: 50%;
+    padding: 1.5em;
+    width: 30vw;
+}
+
+.vroeger h2,
+.oprichter h2{
+    font-size: 2em;
+    color: #f20c90;
+    margin: 0.5em 0;
+}
+
+.vroeger p,
+.oprichter p{
+    color:#aaa;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4em;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container img:first-of-type {
+    position: relative; 
+    z-index: 1;
+    border-radius: 20px;
+    height: 100vw;
+    object-fit: cover;
+}
+
+.container img:last-of-type {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 4px black)
 }
