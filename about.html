@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://db.onlinewebfonts.com/c/4ba6a0aa699286a040c28bf72ea53fa3?family=Dunkin+Sans+Book"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dunkin" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/ac415bee855b42915c6fb198747e34ac?family=Dunkin+Sans+Display"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 
 <body>
@@ -15,7 +21,7 @@
         <div>
             <img src="afbeeldingen/vlag.png" alt="nederlandse vlag">
             <img src="afbeeldingen/dunkinlogo.png" alt="dunkin donuts logo">
-
+            <img src="afbeeldingen/Hamburgericon.svg" alt="hamburger menu">
             <!-- Animatie hamburgermenu naar kruisje-->
         </div>
 
@@ -23,16 +29,16 @@
 
     <main>
 
-        <section>
+        <section class="verhaal">
             <h1>Ons verhaal</h1>
             <h2>Terug in de tijd</h2>
 
-            <img src="afbeeldingen/mascotte.png" alt="retro mascotte van Dunkin' Donuts">
+            <!-- <img src="afbeeldingen/mascotte.png" alt="retro mascotte van Dunkin' Donuts"> -->
         </section>
 
-        <div>
+        <div class="dunkin">
             <img src="afbeeldingen/meisje.gif" alt="gif van een meisje die een hap neemt van een donut">
-            <h1>Dunkin donuts</h1> <!--DIT IS HET CANVAS ELEMENT WAT MOET IK HIERMEE????-->
+            <h2>Dunkin donuts</h2> <!--DIT IS HET CANVAS ELEMENT WAT MOET IK HIERMEE????-->
             <img src="afbeeldingen/bakker.gif" alt="gif van een Dunkin' bakker">
         </div>
 
@@ -45,34 +51,50 @@
                 België. Het bedrijf kondigt aan dat het op het punt staat 'om Nederland en België te veroveren'.</p>
         </article>
 
-        <div>
+        <div class="dunkinthedonut">
             <p>We call it dunkin' the donut.</p>
             <p>We call it dunkin' the donut.</p>
             <p>We call it dunkin' the donut.</p>
             <p>We call it dunkin' the donut.</p>
         </div>
 
-        <img src="afbeeldingen/oudedunkinfoto.png" alt="een oude foto van een dunkin donuts pand">
-        <img src="afbeeldingen/bekericon.png" alt="beker icoontje">
+        <section class="vroeger">
+            <img src="afbeeldingen/oudedunkinfoto.png" alt="een oude foto van een dunkin donuts pand">
+            <img src="afbeeldingen/bekericon.png" alt="beker icoontje">
 
-        <h2>Meer dan 12.200 verstigingen wereldwijd!</h2>
-        <p>Dunkin' (voormalig Dunkin' Donuts), opgericht in 1950, telt meer dan 12.200 vestigingen in 45 landen
-            wereldwijd. Het bedrijf draait grotendeels op franchise-deelnemers. Europa telt 240 Dunkin' winkels.</p>
+            <h2>Meer dan 12.200 verstigingen wereldwijd!</h2>
+            <p>Dunkin' (voormalig Dunkin' Donuts), opgericht in 1950, telt meer dan 12.200 vestigingen in 45 landen
+                wereldwijd. Het bedrijf draait grotendeels op franchise-deelnemers. Europa telt 240 Dunkin' winkels.</p>
+        </section>
 
-        <img src="afbeeldingen/dunkinoprichter.jpeg" alt="de dunkin donuts oprichter">
-        <img src="afbeeldingen/donuticon.png" alt="donut icoontje">
 
-        <h2>"Klinkt goed, smaakt nog beter!"</h2>
-        <p>Het assortiment smaken wordt continu uitgebreid. De donuts worden gemaakt in een centrale bakkerij in
-            Utrecht. De donuts worden ook aan huis bezorgd. Sinds enkele jaren biedt supermarktketen Jumbo de lekkernij
-            aan.</p>
+        <section class="oprichter">
+            <img src="afbeeldingen/dunkinoprichter.jpeg" alt="de dunkin donuts oprichter">
+            <img src="afbeeldingen/donuticon.png" alt="donut icoontje">
 
-        <img src="afbeeldingen/donuteten.png" alt="vrouw die een hap neemt van een donut">
-        <img src="afbeeldingen/dunkinlogosquare.png" alt="Dunkin' Donuts logo vierkant">
+            <h2>"Klinkt goed, smaakt nog beter!"</h2>
+            <p>Het assortiment smaken wordt continu uitgebreid. De donuts worden gemaakt in een centrale bakkerij in
+                Utrecht. De donuts worden ook aan huis bezorgd. Sinds enkele jaren biedt supermarktketen Jumbo de
+                lekkernij
+                aan.</p>
+        </section>
+
+        <div class="container">
+            <img src="afbeeldingen/donuteten.png" alt="vrouw die een hap neemt van een donut">
+            <img src="afbeeldingen/dunkinlogosquare.png" alt="Dunkin' Donuts logo vierkant">
+        </div>
 
         <h2>Store finder</h2>
 
         <!--MAP INVOEGEN MET CANVAS ELEMENT - HOE MOET DAT???-->
+
+        <div>
+            <a href="#">Order now</a>
+        </div>
+
+        <h1>Zoek naar een plaats</h1>
+        <input type="text" id="search-input" placeholder="Voer een plaats in...">
+        <button id="search-button">Zoeken</button>
 
     </main>
 
