@@ -28,13 +28,45 @@
     box-sizing: border-box;
 }
 
+:root{
+    --roze: #f20c90;
+    --wit: white;
+    --whitesmoke: whitesmoke;
+    --oranje: #fe6d01;
+    --donkeroranje: #e8402ebf;
+    --beige: #ddbd8e;
+    --lichtroze: #f950ad;
+    --lichtblauw: #99d6ea;
+    --blauw: #71c5e8;
+    --donkerblauw: #0072ce;
+    --grijs: #aaa;
+    --zwart: black;
+    --bruin: #814c0f;
+    /* --rotate: transform: rotate(-20deg); */
+}
+
+body.darkmode{
+    --roze: #cc231e;
+    --whitesmoke: #083458;
+    --oranje: #99d6ea;
+    --donkeroranje: #00589b;
+    --achtergrond: #34a65f;
+    --lichtroze: #F5624D;
+    --lichtblauw: #34a65f;
+    --blauw: #cc231e;
+}
+
+body{
+    background-color: var(--wit);
+}
+
 h1,
 h2,
 h3,
 h4{
     font-family: "Dunkin sans display";
     text-transform: uppercase;
-    color: white;
+    color: var(--wit);
     font-size: 2.8em;
 }
 
@@ -43,43 +75,78 @@ p {
     font-size: 0.8em;
 }
 
-main > div a{
+.bestelknop{
+    background-color: var(--whitesmoke);
+    padding:0 5% 5% 5%;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 20;
-
 }
 
-header div {
+header {
+    position: relative;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header > nav{
+    border-bottom: 0.10px solid var(--whitesmoke);
+    transition: transform 0.3s ease;
+}
+
+header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    background-color: var(--wit);
+    list-style-type: none;
 }
 
-header div img:first-of-type {
-    width: 4%;
-    max-width: none;
-    height: 100%;
-    margin-top: 2.1em;
+header nav ul li:first-of-type{
+    padding: 3% 4%;
+    background-color: var(--whitesmoke);
+    border-radius: 30px;
 }
 
-header div img:nth-of-type(2) {
-    max-height: 26px;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+header nav ul li:nth-of-type(3){
+    padding: 2% 4%;
+    background-color: var(--whitesmoke);
+    border-radius: 30px;
+}
+
+header nav ul li:first-of-type > img {
+    max-height: 0.58em;
+    width: auto;
+}
+
+header nav ul li:nth-of-type(2) > img {
+    max-height: 1.6em;
+    width: auto; 
+}
+
+header nav ul li:nth-of-type(3) img {
+    max-height: 1em;
+    width: auto;
 }
 
 header p {
     padding: 1em;
-    background: #fe6d01;
+    background: var(--oranje);
     text-align: center;
-    color: white;
+    color: var(--wit);
     text-transform: none;
+    transition: transform 0.3s ease, opacity 1s ease;
 }
 
 header p a {
-    color: #0072ce;
+    color: var(--donkerblauw);
     text-transform: none;
     font-family: "dunkin sans book";
 }
@@ -89,42 +156,60 @@ header > a {
     position: fixed;
 }
 
-.home main {
+header.scrolled p {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+header.scrolled nav{
+    transform: translateY(-66%);
+}
+
+main {
     margin: 0;
 }
 
-.home main > section:nth-of-type(1),
-.home main > section:nth-of-type(2),
-.home main > section:nth-of-type(3),
-.home main > section:nth-of-type(5),
-.home main > section:nth-of-type(6),
-.home main > section:nth-of-type(7),
-.home main > section:nth-of-type(9){
+.welovecoffee,
+.bestel,
+.nieuw,
+.app,
+.nieuwsitem1,
+.nieuwsitem2,
+.storefinder{
     margin: 1.4em;
 }
 
-/* .home section:nth-of-type(n+4) {
-    margin: 0;
-    width: 100%;
-    padding: 0;
-} */
-
-/* WE LOVE COFFEE KADER HOMEPAGINA */
-.home section:first-of-type {
-    position: relative;
-    overflow: hidden;
-}
-
 .achtergrond {
+    display: block;
     width: 100%;
-    background-color: #ddbd8e;
+    background-color: var(--beige);
     z-index: 0;
     border-radius: 20px;
     height: 53vh;
     object-fit: cover;
 }
 
-.home section:first-of-type h1 {
+.achtergrondwinter{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+body.darkmode .achtergrondwinter {
+    display: block;
+}
+
+/* WE LOVE COFFEE KADER HOMEPAGINA */
+.welovecoffee {
+    position: relative;
+    overflow: hidden;
+}
+
+.welovecoffee h1 {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -134,11 +219,7 @@ header > a {
     width: 100%;
 }
 
-.home section:first-of-type img {
-    display: block;
-}
-
-.home section:first-of-type img:nth-of-type(n+2) {
+.welovecoffee img:nth-of-type(n+2) {
     position: absolute;
     top: 50%;
     transform: translateX(-50%);
@@ -146,79 +227,72 @@ header > a {
     width: 40vw;
 }
 
-.home section:first-of-type img:nth-of-type(2) {
+.welovecoffee img:nth-of-type(2) {
     left: calc(50% - 80px);
-    /* Plaats de eerste afbeelding links */
 }
 
-.home section:first-of-type img:nth-of-type(3) {
+.welovecoffee img:nth-of-type(3) {
     left: 50%;
-    /* Plaats de middelste afbeelding in het midden */
     z-index: 2;
     top: 40%;
 }
 
-.home section:first-of-type img:nth-of-type(4) {
+.welovecoffee img:nth-of-type(4) {
     position: absolute;
     top: 50%;
     left: 75%;
-    transform:translate(50% + 80px);
-    /* Centreert deze afbeelding horizontaal */
 }
 
 /*  BESTEL MENU HOMEPAGINA */
-.home section:nth-of-type(2) {
-    background-color: #f20c90;
+.bestel {
+    background-color: var(--roze);
     border-radius: 20px;
     padding: 1em 1em 1.3em;
     position: relative;
     z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    align-items: center;
 }
 
-.home section:nth-of-type(2) h3 {
+.bestel h3 {
+    grid-column: 1 / -1;
     text-align: center;
 }
 
-.home section:nth-of-type(2) p {
-    text-align: left;
-    margin: 4vw 0 4vw;
-    text-transform: none;
-    color: white;
+.bestel p {
+    grid-column: 1 / -1; 
+    color: var(--wit);
 }
 
-.home section:nth-of-type(2) > div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.home section:nth-of-type(2) a {
-    flex: 1;
+.bestel a {
     padding: 0.8em 1em;
     border-radius: 10px;
     text-decoration: none;
-    text-align: center;
-    margin: 0 5px;
     font-size: 0.88em;
     font-family: "dunkin sans display";
     text-transform: uppercase;
+    text-align: center;
 }
 
-.home section:nth-of-type(2) a:first-of-type {
-    background-color: white;
-    color: #f20c90;
+.bestel a:first-of-type {
+    background-color: var(--wit);
+    color: var(--roze);
+    width: 100%;
 }
 
-.home section:nth-of-type(2) a:last-of-type {
-    background-color: #f950ad;
-    color: white;
+.bestel a:last-of-type {
+    background-color: var(--lichtroze);
+    color: var(--wit);
+    width: 100%;
 }
-
 
 /* NIEUW! HOMEPAGINA */
 
-.home section:nth-of-type(3) {
-    background-color: #99d6ea;
+.nieuw {
+    background-color: var(--lichtblauw);
     border-radius: 20px;
     padding: 1em 1em 19em;
     display: flex;
@@ -229,11 +303,11 @@ header > a {
     z-index: 10; 
 }
 
-.home section:nth-of-type(3) h3 {
-    color: white;
+.nieuw h3 {
+    color: var(--wit);
 }
 
-.home section:nth-of-type(3) img {
+.nieuw img {
     position: absolute;
     top: 10%;
     width: 120%;
@@ -241,42 +315,32 @@ header > a {
 
 /* BESTEL DUNKIN ONLINE HOMEPAGINA */
 
-.home section:nth-of-type(4) h2{
-    display: block;
+.stappen {
+    background-color: var(--whitesmoke);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 2em;
+}
+
+.stappen h2{
     line-height: 1;
     margin-left: 0.3em;
     font-size: 3.7em;
     margin-top: 1.7em;
 }
 
-.home section:nth-of-type(4) h2 span:nth-of-type(1), 
-.home section:nth-of-type(4) h2 span:nth-of-type(3) {
-    color: #f20c90;
+.stappen h2 span:nth-of-type(1), 
+.stappen h2 span:nth-of-type(3) {
+    color: var(--roze);
 }
 
-.home section:nth-of-type(4) h2 span:nth-of-type(2) {
-    color: #fe6d01; 
+.stappen h2 span:nth-of-type(2) {
+    color: var(--oranje); 
 }
 
-.home section:nth-of-type(4) {
-    background-color: whitesmoke;
-    margin: 0;
-    position: relative; /* Zorg dat section 4 ook een positionering heeft voor juiste layering */
-    z-index: 1; /* Lagere z-index dan section 3 om erachter te blijven */
-    padding-bottom: 2em;
-}
-
-.home main > div:first-of-type{
-    background-color: whitesmoke;
-    padding: 9.5em;
-    border-bottom-right-radius: 3em;
-    border-bottom-left-radius: 3em;
-    position: absolute;
-    width: 100%;
-}
-
-.home section:nth-of-type(4) > div:nth-of-type(1){
-    background-color: whitesmoke;
+.stappen > div:nth-of-type(1){
+    background-color: var(--whitesmoke);
     padding-top: 35em;
     position: absolute;
     width: 100%;
@@ -285,68 +349,92 @@ header > a {
     z-index: 5;
 }
 
-.home section:nth-of-type(4) ul li {
-    display: flex;
-    align-items: center;
-    background-color: white;
+.stappen ul li {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    list-style-type: none;
+    background-color: var(--wit);
     padding: 1.2em;
     border-radius: 20px;
     margin: 0.8em;
 }
 
-.home section:nth-of-type(4) ul li img {
+.stappen ul li img {
+    grid-row: 1 / 3;
+    align-self: center;
     width: 15vw;
     padding: 0.9em;
     margin-right: 1em;
     border-radius: 50%;
+    background-color: var(--roze);
 }
 
-.home section:nth-of-type(4) ul li img{
-    background-color: #f20c90;
+.stappen ul li:nth-of-type(2) img{
+    background-color: var(--oranje);
 }
 
-.home section:nth-of-type(4) ul li:nth-of-type(2) img{
-    background-color: #fe6d01;
-}
-
-.home section:nth-of-type(4) ul li h4 {
+.stappen ul li h4 {
     margin: 0;
     font-size: 1.2em;
-    color: #f20c90;
+    color: var(--roze);
     width: 70%;
 }
 
-.home section:nth-of-type(4) ul li p {
+.stappen ul li p {
+    grid-column: 2/3;
     margin: 0;
-    color: #aaa;
+    color: var(--grijs);
     line-height: 1.6;
 }
 
-.home section:nth-of-type(4) a,
-.home section:nth-of-type(6) a,
-.home section:nth-of-type(7) a,
+.stappen a,
+.nieuwsitem1 a,
+.nieuwsitem2 a,
 nav ul li a,
-main > div a{
+.bestelknop a{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: var(--wit);
     font-family: "dunkin sans display";
     padding: 1.2em;
     border-radius: 30px;
-    background-color: #fe6d01;
+    background-color: var(--oranje);
     text-transform: uppercase;
     margin-top: 1em;
 }
 
-.home section:nth-of-type(4) a{
+.stappen a{
     margin: 1em;
+}
+
+.stappen > img{
+    display: none;
+}
+
+body.darkmode .stappen > img{
+    width: 30%;
+    position: absolute;
+    left: 58%;
+    top: -1%;
+    z-index: 100;
+    transform: rotate(25deg);
+    display: block;
+}
+
+.style{
+    background-color: var(--whitesmoke);
+    padding: 9.5em;
+    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    position: absolute;
+    width: 100%;
 }
 
 /* APP JIJ 'M AL? HOMEPAGINA */
 
-.home section:nth-of-type(5) {
+.app {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,69 +442,69 @@ main > div a{
     padding: 2em;
     padding-bottom: 12em;
     border-radius: 20px;
-    background-color: #71c5e8;
-    position: relative; /*Nodig voor de positionering van de afbeelding*/
-    overflow: hidden; /* Verbergt alles buiten de grenzen van de container */
+    background-color: var(--blauw);
+    position: relative;
+    overflow: hidden;
 }
 
-.home section:nth-of-type(5) h2,
-.home section:nth-of-type(5) h4,
-.home section:nth-of-type(5) p {
+.app h2,
+.app h4,
+.app p {
     margin: 0.5em 0;
     width: 90%;
 }
 
-.home section:nth-of-type(5) img:nth-of-type(1),
-.home section:nth-of-type(5) img:nth-of-type(2) {
+.app img:nth-of-type(1),
+.app img:nth-of-type(2) {
     margin: 0.8em 0;
     width: 80%;
 }
 
-.home section:nth-of-type(5) img:nth-of-type(3) {
+.app img:nth-of-type(3) {
     width: 230vw;
     position: absolute;
-    bottom: -42%; /* Verplaatst de afbeelding buiten de sectie */
+    bottom: -42%;
 }
 
-.home section:nth-of-type(5) h4{
+.app h4{
     font-size: 1.3em;
 }
 
-.home section:nth-of-type(5) p{
+.app p{
     font-size: 1em;
     line-height: 1.7;
     width: 100%;
-    color: white;
+    color: var(--wit);
 }
 
 /* HEROPENING BATAVIASTAD HOMEPAGINA */
 
-.home section:nth-of-type(6) {
-    position: relative; /* Zorgt ervoor dat de absolute positionering binnen deze sectie werkt */
+.nieuwsitem1 {
+    position: relative; 
 }
 
-.home section:nth-of-type(6) h2 {
+.nieuwsitem1 h2 {
     font-size: 2em;
     margin-top: 1em;
     margin-bottom: 0.5em;
-    color: #f20c90;
+    color: var(--roze);
 }
 
-.home section:nth-of-type(6) p,
-.home section:nth-of-type(7) p {
+.nieuwsitem1 p,
+.nieuwsitem2 p {
     font-size: 1em;
-    color: #aaa;
+    color: var(--grijs);
 }
 
-.home section:nth-of-type(6) img:nth-of-type(1) {
+.nieuwsitem1 img:nth-of-type(1) {
     width: 100%;
     border-radius: 20px;
     Object-fit: cover;
     height: 100vw;
 }
 
-.home section:nth-of-type(6) img:nth-of-type(2) {
-    background-color: #fe6d01;
+.nieuwsitem1 img:nth-of-type(2) {
+    background-color: var(--oranje);
     border-radius: 50%;
     padding: 1em;
     max-width: 28%;
@@ -426,34 +514,34 @@ main > div a{
 }
 
 /*DUNKIN START MET GLUTENVRIJE DONUTS HOMEPAGINA */
-.home section:nth-of-type(7) {
+.nieuwsitem2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.home section:nth-of-type(7) h2 {
+.nieuwsitem2 h2 {
     font-size: 2em;
     margin-top: 3em;
     margin-bottom: 0.5em;
-    color: #fe6d01;
+    color: var(--oranje);
     width: 94%;
 }
 
-.home section:nth-of-type(7) p {
-    text-align: left; /* Links uitlijnen */
+.nieuwsitem2 p {
+    text-align: left;
     width: 94%;
 }
 
-.home section:nth-of-type(7) img:nth-of-type(1) {
+.nieuwsitem2 img:nth-of-type(1) {
     margin-top: 5em;
     width: 50%; 
     position: relative;
 }
 
-.home section:nth-of-type(7) img:nth-of-type(2) {
-    background-color: #f20c90;
+.nieuwsitem2 img:nth-of-type(2) {
+    background-color: var(--roze);
     border-radius: 50%;
     padding: 1em;
     max-width: 28%;
@@ -462,24 +550,30 @@ main > div a{
     transform: translate(-10%, 260%);
 }
 
+.nieuwsitem2 a{
+    width: 100%;
+}
 
 /* DD NIEUWS */
 
 
 /* STORE FINDER */
 
-section:nth-of-type(9) {
-    background-color: #f20c90;
+.storefinder {
+    background-color: var(--roze);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    padding: 10%;
+    margin-bottom: 8em;
 }
 
-section:nth-of-type(9) img:nth-of-type(1){
+.storefinder img:nth-of-type(1){
     border-radius: 50%;
     border: solid;
-    border-color: white;
+    border-color: var(--wit);
     border-width: 0.8em;
     width: 70vw;
     height: 70vw;
@@ -487,24 +581,69 @@ section:nth-of-type(9) img:nth-of-type(1){
     position: relative;
 }
 
-section:nth-of-type(9) img:nth-of-type(2){
+.storefinder img:nth-of-type(2){
     border-radius: 50%;
-    background-color: white;
-    width: 30%;
+    background-color: var(--wit);
+    width: 26%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: rotate(-30deg);
+    filter: drop-shadow(1px 6px 5px var(--zwart));
 }
 
-section:nth-of-type(9) h4{
-    font-size: 1.5em;
-    margin: 0.5em 0;
+.storefinder h4{
+    font-size: 1.3em;
+    margin: 1em 0;
     text-align: center;
-    width: 70%;
+    width: 80%;
 }
 
-section:nth-of-type(9) h2{
+.storefinder h2{
     text-align: center;
     width: 70%;
     line-height: 1;
-    margin: 1em;
+    margin-bottom: 15%;
+}
+
+.storefinder a{
+    background-color: var(--wit);
+    padding: 8%;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: "Dunkin sans display";
+    color: var(--roze);
+    font-size: 0.2em;
+    margin-bottom: 5em;
+}
+
+.storefinder div{
+    border-radius: 50%;
+    background-color: var(--roze);
+    padding: 4%;
+}
+
+.storefinder div:first-of-type{
+    position: absolute;
+    bottom: 12%;
+    right: 32%;
+}
+
+.storefinder div:nth-of-type(2){
+    position: absolute;
+    bottom: 14%;
+    right: 37%;
+}
+
+.kerstboom{
+display: none;
+}
+
+body.darkmode .kerstboom{
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: 650%;
 }
 
 /* FOOTER */
@@ -513,19 +652,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ff6e0c;
-    color: white;
+    background-color: var(--oranje);
+    color: var(--wit);
+    position: relative;
+    padding-top: 8em;
 }
 
 footer > img {
-    max-width: 100%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 50%;
-    transform: rotate(-20deg); 
-    filter: drop-shadow(10px 10px 8px #aaa);
-    position: relative;
+    position: absolute;
     top: -10%;
+    width: 40%;
+    background-color: var(--whitesmoke);
+    border-radius: 50%;
+    filter: drop-shadow(1px 6px 5px var(--zwart));
     transform: rotate(-20deg);
 }
 
@@ -537,50 +676,91 @@ footer nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    margin: 1.4em;
+    margin: 0 1.4em;
 }
 
 footer nav ul li a {
-    background-color: rgba(232,64,46,.75);
+    background-color: var(--donkeroranje);
     width: 100%;
 } 
 
-footer div {
-    margin: 1em 0;
+footer > ul {
+    margin: 2em 0;
     display: flex;
     flex-direction: row;
 }
 
-footer div a {
-    margin: 0 0.5em;
+footer h3{
+    font-size: 1em;
+    margin: 1em;
+}
+
+input {
+    appearance: none;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: var(--donkeroranje);
+    margin-bottom: 2em;
+}
+
+input::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: var(--whitesmoke);
+    transition: left .3s;
+}
+
+input:checked {
+    background-color: var(--donkerblauw);
+}
+
+input:checked::after {
+    left: 70%;
 }
 
 footer p{
     text-align: center;
-    margin: 1em 0;
-    background-color: whitesmoke;
-    color: #aaa;
-    font-size: 0.8em;
-    padding: 2em 0 13em;
-}
-
-footer p a{
-    font-size: 0.8em;
+    background-color: var(--whitesmoke);
+    color: var(--grijs);
+    font-size: 0.7em;
+    padding: 2em 2em 12em;
     text-decoration: none;
 }
 
-footer div:nth-child(1) {
-    border-radius: 50%;
-    background-color: white;
+footer > ul li{
+    list-style-type: none;
 }
 
-footer div a img {
-    padding: 0.5em;
-    width: 10vw;
+footer p a{
+    text-decoration: none;
+    color: var(--grijs);
+}
+
+footer > ul li a{
+    display: inline-block;        
+    padding: 10px;      
+    width: 10vw;   
     height: 10vw;
-    object-fit: contain;
+    background-color: var(--wit);
+    border-radius: 50%;   
 }
 
+footer > ul li a img{
+    height: 5vw;
+    border-radius: 0;   
+}
+
+footer > ul li a {
+    margin: 0 0.5em;
+}
 
 /* ABOUT PAGINA */
 
@@ -588,7 +768,7 @@ footer div a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ddbd8e;
+    background-color: var(--beige);
     padding-bottom: 10em;
     position: relative;
 }
@@ -605,7 +785,7 @@ footer div a img {
 
 .verhaal h1,
 .verhaal h2{
-    color: #814c0f;
+    color: var(--bruin);
 }
 
 .verhaal img{
@@ -629,7 +809,12 @@ footer div a img {
 }
 
 .dunkin h2{
-    color:#f20c90;
+    color: var(--roze);
+}
+
+.dunkin img:first-of-type{
+    display: block;
+    transition: transform 0.2s ease-out;
 }
 
 article {
@@ -643,30 +828,30 @@ article img{
 
 article h2{
     font-size: 2em;
-    color: #f20c90;
+    color: var(--roze);
     margin: 0.5em 0;
 }
 
 article p{
-    color:#aaa;
+    color: var(--grijs);
     font-size: 1em;
     line-height: 1.5;
 }
 
 .dunkinthedonut p:first-of-type,
 .dunkinthedonut p:nth-of-type(3){
-    color: #fe6d01;
+    color: var(--oranje);
 }
 
 .dunkinthedonut p:nth-of-type(2),
 .dunkinthedonut p:nth-of-type(4){
-    color: #f20c90;
+    color: var(--roze);
 }
 
 .dunkinthedonut p{
     font-size: 5em;
     font-family: "Dunkin sans display";
-    width: 100%; /* Maak de container zo breed als de webpagina */
+    width: 100%; 
     white-space: nowrap; /* Zorg dat de tekst in één regel doorloopt zonder op een nieuwe regel te springen */
     transform: rotate(8deg);
     line-height: 1;
@@ -691,7 +876,7 @@ article p{
 
 .vroeger img:nth-of-type(2),
 .oprichter img:nth-of-type(2){
-    background-color: #fe6d01;
+    background-color: var(--oranje);
     border-radius: 50%;
     padding: 1.5em;
     width: 30vw;
@@ -700,13 +885,13 @@ article p{
 .vroeger h2,
 .oprichter h2{
     font-size: 2em;
-    color: #f20c90;
+    color: var(--roze);
     margin: 0.5em 0;
 }
 
 .vroeger p,
 .oprichter p{
-    color:#aaa;
+    color: var(--grijs);
     font-size: 1em;
     line-height: 1.5;
 }
@@ -734,7 +919,7 @@ article p{
     position: absolute;
     z-index: 2;
     width: 50%;
-    background-color: white;
+    background-color: var(--wit);
     border-radius: 50%;
-    filter: drop-shadow(5px 5px 4px black)
+    filter: drop-shadow(5px 5px 4px var(--zwart))
 }
