@@ -18,12 +18,19 @@
     <header>
         <p>Dunkin' is op zoek naar jou! Bekijk onze <a href="#">vacatures</a></p>
 
-        <div>
-            <img src="afbeeldingen/vlag.png" alt="nederlandse vlag">
-            <img src="afbeeldingen/dunkinlogo.png" alt="dunkin donuts logo">
-            <img src="afbeeldingen/Hamburgericon.svg" alt="hamburger menu">
-            <!-- Animatie hamburgermenu naar kruisje-->
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <img src="afbeeldingen/vlag.png" alt="nederlandse vlag" class="vlag">
+                </li>
+                <li>
+                    <img src="afbeeldingen/dunkinlogo.png" alt="dunkin donuts logo">
+                </li>
+                <li>
+                    <img src="afbeeldingen/Hamburgericon.svg" alt="hamburger menu">
+                </li>
+            </ul>
+        </nav>
 
     </header>
 
@@ -88,19 +95,20 @@
 
         <!--MAP INVOEGEN MET CANVAS ELEMENT - HOE MOET DAT???-->
 
-        <div>
+        <div class="bestelknop">
             <a href="#">Order now</a>
         </div>
-
-        <h1>Zoek naar een plaats</h1>
-        <input type="text" id="search-input" placeholder="Voer een plaats in...">
-        <button id="search-button">Zoeken</button>
 
     </main>
 
     <footer>
 
         <img src="afbeeldingen/dunkinlogosquare.png" alt="vierkant logo van Dunkin Donuts">
+
+        <div class="kerstthema">
+            <h3>Christmas theme</h3>
+            <input type="checkbox" id="kerstthema">
+        </div>
 
         <nav>
             <ul>
@@ -111,13 +119,20 @@
             </ul>
         </nav>
 
-        <div>
-            <a href="https://www.tiktok.com/@dunkin_nl"><img src="afbeeldingen/tiktokicon.png" alt="TikTok icoon"></a>
-            <a href="https://www.instagram.com/dunkindonutsnl/"><img src="afbeeldingen/instagramicon.png"
-                    alt="Instagram icoon"></a>
-            <a href="https://www.facebook.com/dunkindonutsnl"><img src="afbeeldingen/facebookicon.png"
-                    alt="Facebook icoon"></a>
-        </div>
+        <ul>
+            <li>
+                <a href="https://www.tiktok.com/@dunkin_nl"><img src="afbeeldingen/tiktokicon.png" alt="TikTok icoon"></a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/dunkindonutsnl/"><img src="afbeeldingen/instagramicon.png" alt="Instagram icoon"></a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/dunkindonutsnl"><img src="afbeeldingen/facebookicon.png" alt="Facebook icoon"></a>
+            </li>
+        </ul>
+
 
         <p>2022 DD IP Holder | <a
                 href="https://cdn.prod.website-files.com/612741c59719f395d4ce4719/61a8e366b481084f9c41dcfd_Dunkin%20NL%20privacy.pdf">Privacy
@@ -126,6 +141,8 @@
                 voorwaarden</a> | ⚡️ by <a href="https://www.foodticket.nl/">Foodticket</a></p>
 
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
