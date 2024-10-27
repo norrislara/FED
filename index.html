@@ -13,23 +13,32 @@
         rel="stylesheet">
 </head>
 
-<body class="home">
+<body>
 
     <header>
         <p>Dunkin' is op zoek naar jou! Bekijk onze <a href="#">vacatures</a></p>
 
-        <div>
-            <img src="afbeeldingen/vlag.png" alt="nederlandse vlag">
-            <img src="afbeeldingen/dunkinlogo.png" alt="dunkin donuts logo">
-            <img src="afbeeldingen/Hamburgericon.svg" alt="hamburger menu">
-            <!-- Animatie hamburgermenu naar kruisje-->
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <img src="afbeeldingen/vlag.png" alt="nederlandse vlag" class="vlag">
+                </li>
+                <li>
+                    <img src="afbeeldingen/dunkinlogo.png" alt="dunkin donuts logo">
+                </li>
+                <li>
+                    <img src="afbeeldingen/Hamburgericon.svg" alt="hamburger menu">
+                </li>
+            </ul>
+        </nav>
 
     </header>
 
     <main>
 
-        <section>
+        <img src="afbeeldingen/sneeuw.gif" alt="sneeuwachtergrond" class="achtergrondwinter">
+
+        <section class="welovecoffee">
             <h1>We love coffee</h1>
             <img src="afbeeldingen/welovecoffee.svg" alt="achtergrond" class="achtergrond">
 
@@ -39,21 +48,21 @@
         </section>
 
         <!-- Animatie dunkin donuts bekers-->
-        <section>
+        <section class="bestel">
             <h3>Bestel!</h3>
             <p>Maak een keuze:</p>
-            <div>
-                <a href="#">Bezorgen</a>
-                <a href="#">Afhalen</a>
-            </div>
+            <a href="#">Bezorgen</a>
+            <a href="#">Afhalen</a>
         </section>
 
-        <section>
+        <section class="nieuw">
             <h3>Nieuw!</h3>
             <img src="afbeeldingen/glutenvrij.png" alt="glutenvrije donuts">
         </section>
 
-        <section>
+        <section class="stappen">
+            <img src="afbeeldingen/kersthoed.png" alt="kersthoed">
+
             <div></div>
             <h2>
                 <span>Bestel</span>
@@ -63,18 +72,14 @@
             <ul>
                 <li>
                     <img src="afbeeldingen/peacesign.png" alt="hand die peace teken maakt">
-                    <div>
-                        <h4>1. Vul je postcode in</h4>
-                        <p>Zoek jij een store in de buurt? Gebruik de Dunkin' storefinder.</p>
-                    </div>
+                    <h4>1. Vul je postcode in</h4>
+                    <p>Zoek jij een store in de buurt? Gebruik de Dunkin' storefinder.</p>
                 </li>
 
                 <li>
                     <img src="afbeeldingen/donuticon.png" alt="donut icoontje">
-                    <div>
-                        <h4>2. Plaats je bestelling</h4>
-                        <p>Kies uit meer dan 200 verschillende donut smaken. Welke kies jij?</p>
-                    </div>
+                    <h4>2. Plaats je bestelling</h4>
+                    <p>Kies uit meer dan 200 verschillende donut smaken. Welke kies jij?</p>
                 </li>
 
                 <li>
@@ -85,9 +90,9 @@
             <a href="#">Order now</a>
         </section>
 
-        <div></div>
+        <div class="style"></div>
 
-        <section>
+        <section class="app">
             <h2>App jij 'm al?</h2>
 
             <h4>De dunkin' app</h4>
@@ -99,7 +104,7 @@
             <img src="afbeeldingen/telefoon.png" alt="telefoon met beeld van de Dunkin' app">
         </section>
 
-        <section>
+        <article class="nieuwsitem1">
             <img src="afbeeldingen/heropeningbataviastad.png" alt="heropening dunkin' donuts bataviastad">
             <img src="afbeeldingen/donuticon.png" alt="donut icoontje">
 
@@ -107,16 +112,16 @@
             <p>Dunkin' Bataviastad gaat weer open!</p>
 
             <a href="#">Lees meer</a>
-        </section>
+        </article>
 
-        <section>
+        <article class="nieuwsitem2">
             <img src="afbeeldingen/glutenvrijedonuts.png" alt="afbeelding glutenvrije donuts">
             <img src="afbeeldingen/smileyicon.png" alt="smiley icoontje">
 
             <h2>Dunkin Start Met Glutenvrije Donuts</h2>
             <p>Dunkin' start met glutenvrije donuts</p>
             <a href="#">Lees meer</a>
-        </section>
+        </article>
 
 
         <section>
@@ -125,18 +130,21 @@
         </section>
 
 
-        <section>
-            <div>
-                <h2>Store finder</h2>
-                <img src="afbeeldingen/dunkinkaart.png" alt="kaart van alle dunkin' donuts in Nederland">
-                <img src="afbeeldingen/dunkinlogosquare.png" alt="vierkant logo van Dunkin Donuts">
-                <h4>Vind een Dunkin' in de buurt</h4>
-            </div>
+        <section class="storefinder">
+            <h2>Store finder</h2>
+            <img src="afbeeldingen/dunkinkaart.png" alt="kaart van alle dunkin' donuts in Nederland">
+            <img src="afbeeldingen/dunkinlogosquare.png" alt="vierkant logo van Dunkin Donuts">
+            <h4>Vind een Dunkin' in de buurt</h4>
 
             <a href="#">Find your store</a>
+
+            <div></div>
+            <div></div>
         </section>
 
-        <div>
+        <img src="afbeeldingen/kerstboom.png" alt="kerstboom" class="kerstboom">
+
+        <div class="bestelknop">
             <a href="#">Order now</a>
         </div>
 
@@ -145,6 +153,9 @@
     <footer>
 
         <img src="afbeeldingen/dunkinlogosquare.png" alt="vierkant logo van Dunkin Donuts">
+
+        <h3>Christmas theme</h3>
+        <input type="checkbox" id="kerstthema">
 
         <nav>
             <ul>
@@ -155,23 +166,22 @@
             </ul>
         </nav>
 
-        <div>
-            <a href="https://www.tiktok.com/@dunkin_nl">
-                <div>
-                    <img src="afbeeldingen/tiktokicon.png" alt="TikTok icoon">
-                </div>
-            </a>
-            <a href="https://www.instagram.com/dunkindonutsnl/">
-                <div>
-                    <img src="afbeeldingen/instagramicon.png" alt="Instagram icoon">
-                </div>
-            </a>
-            <a href="https://www.facebook.com/dunkindonutsnl">
-                <di>
-                    <img src="afbeeldingen/facebookicon.png" alt="Facebook icoon">
-                </div>
-            </a>
-        </div>
+        <ul>
+            <li>
+                <a href="https://www.tiktok.com/@dunkin_nl"><img src="afbeeldingen/tiktokicon.png"
+                        alt="TikTok icoon"></a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/dunkindonutsnl/"><img src="afbeeldingen/instagramicon.png"
+                        alt="Instagram icoon"></a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/dunkindonutsnl"><img src="afbeeldingen/facebookicon.png"
+                        alt="Facebook icoon"></a>
+            </li>
+        </ul>
 
 
         <p>2022 DD IP Holder | <a
@@ -181,6 +191,8 @@
                 voorwaarden</a> | ⚡️ by <a href="https://www.foodticket.nl/">Foodticket</a></p>
 
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
