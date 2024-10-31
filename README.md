@@ -41,7 +41,7 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/home.jpg" width="375px" alt="omschrijving van de homepagina">
+  <img src="readme-images/home.JPG" width="375px" alt="omschrijving van de homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
