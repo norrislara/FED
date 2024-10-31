@@ -105,9 +105,6 @@ Het eerste voortgangsgesprek had mijn groepje met de docent, we hebben de bovens
 </details>
 
 
-
-
-
 ## Voortgang 2 (week 3)
 
 <details>
@@ -119,10 +116,11 @@ Ik heb geen tijd gehad om veel verder te werken, wel heb ik nu alle html op de w
   ### Agenda voor meeting
  Deze week waren er vooral veel specifieke vragen dus ik heb meegeluisterd met iedereen en dit heeft mij ook weer inzichten gegeven voor mijn eigen werk.
  **Vraag 1** Hoe zorg ik ervoor dat het plaatje inzoomt zonder dat die meer ruimte meepakt en dus buiten mijn frame gaat staan? (vraag van Tessa)
-  
-
+ **Vraag 2** Mag je een class op je body zetten?
   
   ### Verslag van meeting
+  Tessa had een specifieke vraag voor haar website, ik heb hier veel aan gehad. Het antwoord op deze vraag is namelijk 'overflow: hidden'. Hier heb ik in de rest van mijn code nog erg veel aan gehad. Verder kwam ik er deze les achter dat je geen classes op de body mag zetten, dus ik moest alles weer gaan veranderen wat heel jammer was. Uiteindelijk is het wel helemaal gelukt wat fijn was.
+  
 
 </details>
 
@@ -214,17 +212,26 @@ De carousel gaat op de website van Dunkin' Donuts oneindig door, maar dit is mij
 </details>
 
 
-## Bronnenlijst
+## Bronnenlijst (A-Z)
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+https://chatgpt.com/
 
-  1. bron 1
-  2. bron 2
-  3. ...
+clip-path - CSS: Cascading Style Sheets | MDN. (2024, 26 september). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+
+GreatStack. (2021, 4 juni). How to make website Preloader using HTML CSS JS | Page loading, website loading animation [Video]. YouTube. https://www.youtube.com/watch?v=Yf5d_Zx3AaI
+
+Herbert, D. (2021, 17 oktober). How to Implement a Dark Mode with CSS and 3 Simple Lines of Javascript. DEV Community. https://dev.to/daveyhert/how-to-implement-a-dark-mode-with-css-and-3-simple-lines-of-javascript-576
+
+Treehouse. (2023, 6 oktober). Build a Hamburger Menu with HTML, CSS, and JavaScript | Treehouse Tips [Video]. YouTube. https://www.youtube.com/watch?v=aNDqzlAKmZc
+
+Vladsave Coding. (2022, 8 februari). HTML carousel slideshow from scratch using horizontal scrolling [Video]. YouTube. https://www.youtube.com/watch?v=ORwt4fXVtdI
+
+Wave Generator - CSS Clip Path Generator for Beautiful Waves. (z.d.). https://www.wavegenerator.app/
+
+Winterwind Inc. (2022, 20 december). Dropping Text Animation with CSS [Video]. YouTube. https://www.youtube.com/watch?v=8UKd87z5S3U
+
+W3Schools.com. (z.d.). https://www.w3schools.com/howto/howto_js_filter_lists.asp
 
 </details>
