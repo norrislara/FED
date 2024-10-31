@@ -5,20 +5,20 @@
     font-family: "Dunkin Sans Book";
     src: url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.eot");
     src: url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.eot?#iefix") format("embedded-opentype"),
-         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff2") format("woff2"),
-         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff") format("woff"),
-         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.ttf") format("truetype"),
-         url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.svg#Dunkin Sans Book") format("svg");
+        url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/4ba6a0aa699286a040c28bf72ea53fa3.svg#Dunkin Sans Book") format("svg");
 }
 
 @font-face {
     font-family: "Dunkin Sans Display";
     src: url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.eot");
     src: url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.eot?#iefix") format("embedded-opentype"),
-         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff2") format("woff2"),
-         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff") format("woff"),
-         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.ttf") format("truetype"),
-         url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.svg#Dunkin Sans Display") format("svg");
+        url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.svg#Dunkin Sans Display") format("svg");
 }
 
 
@@ -28,7 +28,15 @@
     box-sizing: border-box;
 }
 
-:root{
+body {
+    background-color: var(--wit);
+}
+
+main {
+    overflow-x: hidden;
+}
+
+:root {
     --roze: #f20c90;
     --wit: white;
     --whitesmoke: whitesmoke;
@@ -40,12 +48,14 @@
     --blauw: #71c5e8;
     --donkerblauw: #0072ce;
     --grijs: #aaa;
+    --lichtgrijs: #f0f0f0;
+    --donkergrijs: #5b5b5b;
     --zwart: black;
     --bruin: #814c0f;
-    /* --rotate: transform: rotate(-20deg); */
+    --donkerbruin: #512d00;
 }
 
-body.darkmode{
+body.darkmode {
     --roze: #cc231e;
     --whitesmoke: #083458;
     --oranje: #99d6ea;
@@ -56,14 +66,142 @@ body.darkmode{
     --blauw: #cc231e;
 }
 
-body{
-    background-color: var(--wit);
+body > div:first-of-type {
+    background-color: var(--oranje);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    animation: fadeout .3s linear forwards;
+    animation-delay: 1.8s;
+}
+
+body > div:first-of-type span {
+    display: flex;
+    align-items: center;
+    font-family: "Dunkin sans display";
+    font-size: 3.5em;
+    color: var(--wit);
+    opacity: 0;
+    animation: drop .5s linear forwards;
+}
+
+body > div:first-of-type span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+body > div:first-of-type span:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+body > div:first-of-type span:nth-of-type(4) {
+    animation-delay: 0.4s;
+}
+
+body > div:first-of-type span:nth-of-type(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes drop {
+
+    /* Bron: https://www.youtube.com/watch?v=8UKd87z5S3U*/
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 5%;
+        font-size: 4em;
+    }
+
+    10% {
+        opacity: 50%;
+        font-size: 4.2em;
+    }
+
+    20% {
+        opacity: 100%;
+        font-size: 4.5em;
+    }
+
+    30% {
+        opacity: 100%;
+        font-size: 4.8em;
+    }
+
+    40% {
+        opacity: 100%;
+        font-size: 5.2em;
+    }
+
+    50% {
+        opacity: 100%;
+        font-size: 5.7em;
+    }
+
+    60% {
+        opacity: 100%;
+        font-size: 6em;
+    }
+
+    70% {
+        opacity: 100%;
+        font-size: 5.4em;
+    }
+
+    80% {
+        opacity: 100%;
+        font-size: 3.8em;
+    }
+
+    90% {
+        opacity: 100%;
+        font-size: 3.7em;
+    }
+
+    100% {
+        opacity: 100%;
+        font-size: 3.5em;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 100%;
+        font-size: 1em;
+    }
+
+    20% {
+        opacity: 100%;
+        font-size: 0.8em;
+    }
+
+    40% {
+        opacity: 100%;
+        font-size: 0.6em;
+    }
+
+    60% {
+        opacity: 100%;
+        font-size: 0.4em;
+    }
+
+    80% {
+        opacity: 80%;
+        font-size: 0.2em;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 h1,
 h2,
 h3,
-h4{
+h4 {
     font-family: "Dunkin sans display";
     text-transform: uppercase;
     color: var(--wit);
@@ -75,31 +213,49 @@ p {
     font-size: 0.8em;
 }
 
-.bestelknop{
+.bestelknop {
     background-color: var(--whitesmoke);
-    padding:0 5% 5% 5%;
+    padding: 0 5% 5% 5%;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 20;
 }
 
+/*HEADER*/
+
+body.inbeeld {
+    overflow: hidden;
+}
+
+header .socialmedia {
+    display: none;
+}
+
+body.inbeeld .socialmedia {
+    display: block;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
 header {
     position: relative;
-    z-index: 1;
+    z-index: 100;
     position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1000;
 }
 
-header > nav{
+header nav:first-of-type {
     border-bottom: 0.10px solid var(--whitesmoke);
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+    flex: 1;
 }
 
-header nav ul {
+header nav:first-of-type ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -109,31 +265,100 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li:first-of-type{
+header nav:first-of-type ul.inbeeld {
+    background-color: var(--whitesmoke);
+}
+
+header nav:first-of-type ul li:first-of-type {
     padding: 3% 4%;
     background-color: var(--whitesmoke);
     border-radius: 30px;
 }
 
-header nav ul li:nth-of-type(3){
-    padding: 2% 4%;
+header nav:first-of-type ul li:nth-of-type(3) {
+    padding: 3% 4%;
     background-color: var(--whitesmoke);
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-header nav ul li:first-of-type > img {
+header nav:first-of-type ul li:nth-of-type(3).inbeeld span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+header nav:first-of-type ul li:nth-of-type(3).inbeeld span:nth-child(2) {
+    opacity: 0;
+}
+
+header nav:first-of-type ul li:nth-of-type(3).inbeeld span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+header nav:first-of-type ul li:first-of-type>img {
     max-height: 0.58em;
     width: auto;
 }
 
-header nav ul li:nth-of-type(2) > img {
+header nav:first-of-type ul li:nth-of-type(2)>img {
     max-height: 1.6em;
-    width: auto; 
+    width: auto;
 }
 
-header nav ul li:nth-of-type(3) img {
-    max-height: 1em;
-    width: auto;
+header nav:first-of-type ul li:nth-of-type(3) span {
+    height: 0.6vw;
+    width: 4vw;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    margin: 0.1em;
+}
+
+header nav:nth-of-type(2) div {
+    background-color: var(--whitesmoke);
+    border-radius: 50%;
+    width: 200%;
+    padding: 8em;
+    position: fixed;
+    bottom: -100%;
+    transition: bottom 0.9s ease;
+}
+
+header nav:nth-of-type(2) div.inbeeld {
+    bottom: -15%;
+    z-index: 2;
+}
+
+header nav:nth-of-type(2) ul li a {
+    padding: 0;
+    background-color: transparent;
+    color: var(--donkerbruin);
+    font-size: 2em;
+}
+
+header nav:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav:nth-of-type(2) ul:first-of-type,
+.submenu {
+    background-color: var(--wit);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    transition: bottom 0.8s ease;
+}
+
+header nav:nth-of-type(2) ul:first-of-type.inbeeld,
+.has-submenu.active .submenu {
+    bottom: -14%;
+}
+
+header.scrolled nav:nth-of-type(2) ul:first-of-type.inbeeld {
+    bottom: -9%;
 }
 
 header p {
@@ -151,7 +376,7 @@ header p a {
     font-family: "dunkin sans book";
 }
 
-header > a {
+header>a {
     position: absolute;
     position: fixed;
 }
@@ -161,9 +386,12 @@ header.scrolled p {
     opacity: 0;
 }
 
-header.scrolled nav{
+header.scrolled nav:first-of-type {
     transform: translateY(-66%);
 }
+
+header nav:nth-of-type()
+/*MAIN*/
 
 main {
     margin: 0;
@@ -175,7 +403,8 @@ main {
 .app,
 .nieuwsitem1,
 .nieuwsitem2,
-.storefinder{
+.storefinder1,
+.storefinder {
     margin: 1.4em;
 }
 
@@ -189,14 +418,14 @@ main {
     object-fit: cover;
 }
 
-.achtergrondwinter{
+.achtergrondwinter {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 body.darkmode .achtergrondwinter {
@@ -263,7 +492,7 @@ body.darkmode .achtergrondwinter {
 }
 
 .bestel p {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     color: var(--wit);
 }
 
@@ -300,7 +529,7 @@ body.darkmode .achtergrondwinter {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .nieuw h3 {
@@ -323,23 +552,26 @@ body.darkmode .achtergrondwinter {
     padding-bottom: 2em;
 }
 
-.stappen h2{
+.stappen h2 {
     line-height: 1;
     margin-left: 0.3em;
     font-size: 3.7em;
-    margin-top: 1.7em;
+    margin: -8em 0.4em -9em;
+    padding: 9em 0;
 }
 
-.stappen h2 span:nth-of-type(1), 
-.stappen h2 span:nth-of-type(3) {
+.stappen h2 span:nth-of-type(1),
+.stappen h2 span:nth-of-type(3),
+.ddnieuws h2 span:nth-of-type(2) {
     color: var(--roze);
 }
 
-.stappen h2 span:nth-of-type(2) {
-    color: var(--oranje); 
+.stappen h2 span:nth-of-type(2),
+.ddnieuws h2 span:first-of-type {
+    color: var(--oranje);
 }
 
-.stappen > div:nth-of-type(1){
+.stappen>div {
     background-color: var(--whitesmoke);
     padding-top: 35em;
     position: absolute;
@@ -347,6 +579,10 @@ body.darkmode .achtergrondwinter {
     top: -35em;
     left: 0;
     z-index: 5;
+}
+
+.stappen ul{
+    margin-bottom: 2em;
 }
 
 .stappen ul li {
@@ -369,7 +605,7 @@ body.darkmode .achtergrondwinter {
     background-color: var(--roze);
 }
 
-.stappen ul li:nth-of-type(2) img{
+.stappen ul li:nth-of-type(2) img {
     background-color: var(--oranje);
 }
 
@@ -391,7 +627,7 @@ body.darkmode .achtergrondwinter {
 .nieuwsitem1 a,
 .nieuwsitem2 a,
 nav ul li a,
-.bestelknop a{
+.bestelknop a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,15 +641,18 @@ nav ul li a,
     margin-top: 1em;
 }
 
-.stappen a{
+.stappen a {
     margin: 1em;
+    margin-bottom: 18em;
+    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 3em;
 }
 
-.stappen > img{
+.stappen>img {
     display: none;
 }
 
-body.darkmode .stappen > img{
+body.darkmode .stappen>img {
     width: 30%;
     position: absolute;
     left: 58%;
@@ -421,15 +660,6 @@ body.darkmode .stappen > img{
     z-index: 100;
     transform: rotate(25deg);
     display: block;
-}
-
-.style{
-    background-color: var(--whitesmoke);
-    padding: 9.5em;
-    border-bottom-right-radius: 3em;
-    border-bottom-left-radius: 3em;
-    position: absolute;
-    width: 100%;
 }
 
 /* APP JIJ 'M AL? HOMEPAGINA */
@@ -445,6 +675,8 @@ body.darkmode .stappen > img{
     background-color: var(--blauw);
     position: relative;
     overflow: hidden;
+    margin-top: -15em;
+    z-index: 1;
 }
 
 .app h2,
@@ -466,11 +698,11 @@ body.darkmode .stappen > img{
     bottom: -42%;
 }
 
-.app h4{
+.app h4 {
     font-size: 1.3em;
 }
 
-.app p{
+.app p {
     font-size: 1em;
     line-height: 1.7;
     width: 100%;
@@ -480,7 +712,7 @@ body.darkmode .stappen > img{
 /* HEROPENING BATAVIASTAD HOMEPAGINA */
 
 .nieuwsitem1 {
-    position: relative; 
+    position: relative;
 }
 
 .nieuwsitem1 h2 {
@@ -536,7 +768,7 @@ body.darkmode .stappen > img{
 
 .nieuwsitem2 img:nth-of-type(1) {
     margin-top: 5em;
-    width: 50%; 
+    width: 50%;
     position: relative;
 }
 
@@ -550,16 +782,99 @@ body.darkmode .stappen > img{
     transform: translate(-10%, 260%);
 }
 
-.nieuwsitem2 a{
+.nieuwsitem2 a {
     width: 100%;
 }
 
 /* DD NIEUWS */
+/*Bron carousel: https://www.youtube.com/watch?v=ORwt4fXVtdI&t=157s8*/
 
+.ddnieuws {
+    background-color: var(--whitesmoke);
+    margin-bottom: 3em;
+    padding: 1.4em;
+}
+
+.ddnieuws h2 {
+    font-size: 3em;
+    width: 60%;
+    line-height: 1;
+    margin: 0.5em 0 1em;
+}
+
+.ddnieuws h3 {
+    text-transform: none;
+    font-size: 1.7em;
+    color: var(--donkerbruin);
+    font-size: 1.2em;
+}
+
+.ddnieuws ul {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.ddnieuws ul::-webkit-scrollbar {
+    display: none;
+}
+
+.ddnieuws ul li {
+    list-style-type: none;
+    margin: 0.2em;
+    scroll-snap-align: center;
+    border: 0.3em solid var(--lichtgrijs);
+    padding: 1em;
+    border-radius: 5vw;
+}
+
+.ddnieuws ul li:nth-of-type(2) img {
+    width: 18em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 3vw;
+}
+
+.ddnieuws ul li:first-of-type img {
+    width: 18em;
+    height: 12em;
+    object-fit: cover;
+    border-radius: 3vw;
+}
+
+.ddnieuws div {
+    text-align: center;
+}
+
+.ddnieuws div img {
+    width: 12vw;
+    height: 12vw;
+    margin: 2.3em 0.1em;
+}
+
+.ddnieuws ul li p {
+    font-family: "Dunkin sans display";
+    text-transform: uppercase;
+    color: var(--wit);
+    text-align: center;
+    border-radius: 5vw;
+    padding: 0.5em 1em;
+    width: 30%;
+    margin: 1em 0;
+}
+
+.ddnieuws ul li:first-of-type p {
+    background-color: var(--roze);
+}
+
+.ddnieuws ul li:nth-of-type(2) p {
+    background-color: var(--oranje);
+}
 
 /* STORE FINDER */
 
-.storefinder {
+.storefinder1 {
     background-color: var(--roze);
     border-radius: 20px;
     display: flex;
@@ -567,10 +882,9 @@ body.darkmode .stappen > img{
     align-items: center;
     position: relative;
     padding: 10%;
-    margin-bottom: 8em;
 }
 
-.storefinder img:nth-of-type(1){
+.storefinder1 img:nth-of-type(1) {
     border-radius: 50%;
     border: solid;
     border-color: var(--wit);
@@ -581,7 +895,7 @@ body.darkmode .stappen > img{
     position: relative;
 }
 
-.storefinder img:nth-of-type(2){
+.storefinder1 img:nth-of-type(2) {
     border-radius: 50%;
     background-color: var(--wit);
     width: 26%;
@@ -592,21 +906,21 @@ body.darkmode .stappen > img{
     filter: drop-shadow(1px 6px 5px var(--zwart));
 }
 
-.storefinder h4{
+.storefinder1 h4 {
     font-size: 1.3em;
     margin: 1em 0;
     text-align: center;
     width: 80%;
 }
 
-.storefinder h2{
+.storefinder1 h2 {
     text-align: center;
     width: 70%;
     line-height: 1;
     margin-bottom: 15%;
 }
 
-.storefinder a{
+.storefinder1 a {
     background-color: var(--wit);
     padding: 8%;
     border-radius: 40px;
@@ -617,33 +931,344 @@ body.darkmode .stappen > img{
     margin-bottom: 5em;
 }
 
-.storefinder div{
+.storefinder1 div {
     border-radius: 50%;
     background-color: var(--roze);
     padding: 4%;
 }
 
-.storefinder div:first-of-type{
+.storefinder1 div:first-of-type {
     position: absolute;
     bottom: 12%;
     right: 32%;
 }
 
-.storefinder div:nth-of-type(2){
+.storefinder1 div:nth-of-type(2) {
     position: absolute;
     bottom: 14%;
     right: 37%;
 }
 
-.kerstboom{
-display: none;
+.kerstboom {
+    display: none;
 }
 
-body.darkmode .kerstboom{
+body.darkmode .kerstboom {
     display: block;
     width: 40%;
     position: absolute;
     top: 650%;
+}
+
+/* ABOUT PAGINA */
+
+.verhaal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--beige);
+    padding-bottom: 10em;
+    position: relative;
+}
+
+.verhaal h1 {
+    font-size: 1.3em;
+    margin: 1em;
+    z-index: 1;
+}
+
+.verhaal h2 {
+    text-align: center;
+    line-height: 1;
+    z-index: 1;
+}
+
+.verhaal h1,
+.verhaal h2 {
+    color: var(--bruin);
+}
+
+.verhaal img {
+    width: 50vw;
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+    z-index: 1;
+}
+
+/*GIF'S*/
+
+.dunkin img {
+    border-radius: 20px;
+}
+
+.dunkin img:first-of-type {
+    margin-bottom: 3.5em;
+    z-index: 1;
+}
+
+.dunkin img:nth-of-type(2) {
+    margin-top: 3.5em;
+}
+
+.dunkin {
+    margin: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+    overflow: hidden;
+}
+
+.dunkin h2 {
+    font-family: "cc-summer-fling", sans-serif;
+    font-style: italic;
+    text-transform: lowercase;
+    color: var(--donkerbruin);
+    width: 70%;
+    font-size: 3.5em;
+    letter-spacing: -2vw;
+    line-height: 1;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 15em;
+    z-index: 1;
+}
+
+.dunkin h2 span:first-of-type,
+.dunkin h2 span:nth-of-type(8) {
+    text-transform: uppercase;
+}
+
+.dunkin h2 span {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.dunkin h2 .visible {
+    opacity: 1;
+}
+
+/*DUNKIN NEDERLAND*/
+
+.dunkinnederland {
+    margin: 1.4em;
+}
+
+.dunkinnederland img {
+    width: 90vw;
+    height: 90vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.dunkinnederland h2 {
+    font-size: 2em;
+    color: var(--roze);
+    margin: 0.5em 0;
+    text-transform: none;
+    width: 60%;
+}
+
+.dunkinnederland p {
+    color: var(--grijs);
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/*Dunkin the donut tekst*/
+
+.dunkinthedonut p:first-of-type,
+.dunkinthedonut p:nth-of-type(3) {
+    color: var(--oranje);
+}
+
+.dunkinthedonut p:nth-of-type(2),
+.dunkinthedonut p:nth-of-type(4) {
+    color: var(--roze);
+}
+
+.dunkinthedonut p {
+    font-size: 5em;
+    font-family: "Dunkin sans display";
+    width: 100%;
+    white-space: nowrap;
+    /* Zorg dat de tekst in één regel doorloopt zonder op een nieuwe regel te springen */
+    transform: rotate(8deg);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.dunkinthedonut {
+    padding: 2em 0;
+    overflow: hidden;
+}
+
+.dunkinthedonut {
+    margin: 10em 0;
+}
+
+/*Teksten*/
+
+.vroeger,
+.oprichter {
+    margin: 1.4em;
+    position: relative;
+}
+
+.vroeger img:first-of-type,
+.oprichter img:first-of-type {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.vroeger img:nth-of-type(2),
+.oprichter img:nth-of-type(2) {
+    border-radius: 50%;
+    padding: 1.5em;
+    width: 30vw;
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.vroeger img:nth-of-type(2) {
+    background-color: var(--oranje);
+    top: 43%;
+}
+
+.oprichter img:nth-of-type(2) {
+    background-color: var(--roze);
+    top: 53%;
+}
+
+.vroeger h2,
+.oprichter h2 {
+    font-size: 2em;
+    margin-top: 2.2em;
+    text-transform: none;
+}
+
+.vroeger h2 {
+    color: var(--roze);
+}
+
+.oprichter h2 {
+    color: var(--oranje);
+}
+
+.vroeger p,
+.oprichter p {
+    color: var(--grijs);
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+/*Vrouw die donut eet*/
+
+main > img:first-of-type {
+    margin: 1.4em;
+    margin-bottom: -30%;
+    border-radius: 20px;
+    height: 100vw;
+    width: 88%;
+    object-fit: cover;
+}
+
+main > img:last-of-type {
+    margin-left: 23%;
+    margin-top: -300%;
+    z-index: 2;
+    width: 50%;
+    background-color: var(--wit);
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 4px var(--zwart))
+}
+
+/*STOREFINDER*/
+
+main>h2 {
+    margin-top: 3em;
+    position: relative;
+    width: 100%;
+    padding: 0.9em 1em 7em;
+    text-align: center;
+    background-color: var(--roze);
+    clip-path: polygon(100% 0%, 0% 0%, 0.00% 61.54%, 2.86% 61.74%, 5.71% 62.30%, 8.57% 63.14%, 11.43% 64.13%, 14.29% 65.11%, 17.14% 65.94%, 20.00% 66.49%, 22.86% 66.67%, 25.71% 66.45%, 28.57% 65.87%, 31.43% 65.03%, 34.29% 64.03%, 37.14% 63.05%, 40.00% 62.23%, 42.86% 61.70%, 45.71% 61.54%, 48.57% 61.77%, 51.43% 62.36%, 54.29% 63.22%, 57.14% 64.22%, 60.00% 65.19%, 62.86% 66.00%, 65.71% 66.52%, 68.57% 66.66%, 71.43% 66.41%, 74.29% 65.81%, 77.14% 64.94%, 80.00% 63.94%, 82.86% 62.97%, 85.71% 62.17%, 88.57% 61.67%, 91.43% 61.55%, 94.29% 61.81%, 97.14% 62.43%, 100.00% 63.31%);
+    /* BRON CLIPPATH: https://www.wavegenerator.app/ 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path*/
+}
+
+.storefinder {
+    position: relative;
+    border: 1vw solid var(--whitesmoke);
+    background-color: var(--wit);
+    border-radius: 20px;
+    margin: -70vw 1.4em 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    height: 50em;
+    z-index: 1;
+}
+
+.storefinder img {
+    border-radius: 10px;
+}
+
+.storefinder input {
+    width: 100%;
+    border: none;
+    border-bottom: .2vw solid var(--grijs);
+    background-color: transparent;
+    font-family: "Dunkin Sans Book";
+    padding: 1em;
+}
+
+.storefinder ul {
+    list-style-type: none;
+    overflow-y: scroll;
+}
+
+.storefinder ul li {
+    padding: 1em;
+    border-top: .2vw solid var(--grijs);
+}
+
+.storefinder ul li h3,
+.storefinder>p {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--roze);
+    display: block;
+}
+
+.storefinder>p {
+    font-family: "Dunkin Sans Display";
+    padding: 1em 0;
+}
+
+.storefinder ul li p {
+    font-family: "Dunkin Sans Display";
+    line-height: 1.5;
+    color: var(--donkergrijs);
+    font-size: 0.7em;
+}
+
+.storefinder ul li p:nth-of-type(4) {
+    margin-top: 1em;
+}
+
+.storefinder ul li p:nth-of-type(5) {
+    border-radius: 20vw;
+    background-color: var(--whitesmoke);
+    padding: 0.3em;
+    text-align: center;
+    width: 30%;
+    color: var(--grijs);
+    margin-top: 5%;
 }
 
 /* FOOTER */
@@ -656,9 +1281,10 @@ footer {
     color: var(--wit);
     position: relative;
     padding-top: 8em;
+    margin-top: 8em;
 }
 
-footer > img {
+footer>img {
     position: absolute;
     top: -10%;
     width: 40%;
@@ -682,20 +1308,14 @@ footer nav ul {
 footer nav ul li a {
     background-color: var(--donkeroranje);
     width: 100%;
-} 
-
-footer > ul {
-    margin: 2em 0;
-    display: flex;
-    flex-direction: row;
 }
 
-footer h3{
+footer h3 {
     font-size: 1em;
     margin: 1em;
 }
 
-input {
+footer input {
     appearance: none;
     position: relative;
     width: 50px;
@@ -705,7 +1325,7 @@ input {
     margin-bottom: 2em;
 }
 
-input::after {
+footer input::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -718,15 +1338,15 @@ input::after {
     transition: left .3s;
 }
 
-input:checked {
+footer input:checked {
     background-color: var(--donkerblauw);
 }
 
-input:checked::after {
+footer input:checked::after {
     left: 70%;
 }
 
-footer p{
+footer p {
     text-align: center;
     background-color: var(--whitesmoke);
     color: var(--grijs);
@@ -735,191 +1355,33 @@ footer p{
     text-decoration: none;
 }
 
-footer > ul li{
-    list-style-type: none;
-}
-
-footer p a{
+footer p a {
     text-decoration: none;
     color: var(--grijs);
 }
 
-footer > ul li a{
-    display: inline-block;        
-    padding: 10px;      
-    width: 10vw;   
+.socialmedia {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia li {
+    list-style-type: none;
+}
+
+.socialmedia li a {
+    display: inline-block;
+    padding: 17%;
+    width: 10vw;
     height: 10vw;
-    background-color: var(--wit);
-    border-radius: 50%;   
-}
-
-footer > ul li a img{
-    height: 5vw;
-    border-radius: 0;   
-}
-
-footer > ul li a {
+    border-radius: 50%;
     margin: 0 0.5em;
-}
-
-/* ABOUT PAGINA */
-
-.verhaal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--beige);
-    padding-bottom: 10em;
-    position: relative;
-}
-
-.verhaal h1{
-    font-size: 1.3em;
-    margin: 1em;
-}
-
-.verhaal h2{
-    text-align: center;
-    line-height: 1;
-}
-
-.verhaal h1,
-.verhaal h2{
-    color: var(--bruin);
-}
-
-.verhaal img{
-    width: 50vw;
-    position: absolute;
-    right: -10%;
-    bottom: -10%;
-    z-index: 1;
-}
-
-.dunkin img{
-    border-radius: 20px;
-    width: 90vw;
-}
-
-.dunkin {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 10em 1.4em;
-}
-
-.dunkin h2{
-    color: var(--roze);
-}
-
-.dunkin img:first-of-type{
-    display: block;
-    transition: transform 0.2s ease-out;
-}
-
-article {
-    margin: 1.4em;
-}
-
-article img{
-    width: 90vw;
-    border-radius: 20px;
-}
-
-article h2{
-    font-size: 2em;
-    color: var(--roze);
-    margin: 0.5em 0;
-}
-
-article p{
-    color: var(--grijs);
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.dunkinthedonut p:first-of-type,
-.dunkinthedonut p:nth-of-type(3){
-    color: var(--oranje);
-}
-
-.dunkinthedonut p:nth-of-type(2),
-.dunkinthedonut p:nth-of-type(4){
-    color: var(--roze);
-}
-
-.dunkinthedonut p{
-    font-size: 5em;
-    font-family: "Dunkin sans display";
-    width: 100%; 
-    white-space: nowrap; /* Zorg dat de tekst in één regel doorloopt zonder op een nieuwe regel te springen */
-    transform: rotate(8deg);
-    line-height: 1;
-    text-transform: uppercase;
-    overflow: hidden;
-}
-
-.dunkinthedonut{
-    margin: 10em 0;
-}
-
-.vroeger,
-.oprichter{
-    margin: 1.4em;
-}
-
-.vroeger img:first-of-type,
-.oprichter img:first-of-type{
-    width: 100%;
-    border-radius: 20px;
-}
-
-.vroeger img:nth-of-type(2),
-.oprichter img:nth-of-type(2){
-    background-color: var(--oranje);
-    border-radius: 50%;
-    padding: 1.5em;
-    width: 30vw;
-}
-
-.vroeger h2,
-.oprichter h2{
-    font-size: 2em;
-    color: var(--roze);
-    margin: 0.5em 0;
-}
-
-.vroeger p,
-.oprichter p{
-    color: var(--grijs);
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.4em;
-}
-
-.container img {
-    width: 100%;
-}
-
-.container img:first-of-type {
-    position: relative; 
-    z-index: 1;
-    border-radius: 20px;
-    height: 100vw;
-    object-fit: cover;
-}
-
-.container img:last-of-type {
-    position: absolute;
-    z-index: 2;
-    width: 50%;
     background-color: var(--wit);
-    border-radius: 50%;
-    filter: drop-shadow(5px 5px 4px var(--zwart))
+    text-align: center;
+}
+
+.socialmedia li a img {
+    height: 5vw;
+    border-radius: 0;
 }
