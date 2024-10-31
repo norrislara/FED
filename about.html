@@ -12,9 +12,19 @@
     <link href="https://db.onlinewebfonts.com/c/ac415bee855b42915c6fb198747e34ac?family=Dunkin+Sans+Display"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jfa5ypc.css">
 </head>
 
 <body>
+
+    <div>
+        <span>D</span>
+        <span>N</span>
+        <span>K</span>
+        <span>N</span>
+        <span>'</span>
+    </div>
+
     <header>
         <p>Dunkin' is op zoek naar jou! Bekijk onze <a href="#">vacatures</a></p>
 
@@ -26,8 +36,31 @@
                 <li>
                     <img src="afbeeldingen/dunkinlogo.png" alt="dunkin donuts logo">
                 </li>
+                <li> <!--Bron: https://www.youtube.com/watch?v=aNDqzlAKmZc-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <div></div>
+            <ul>
                 <li>
-                    <img src="afbeeldingen/Hamburgericon.svg" alt="hamburger menu">
+                    <a href="#">Storefinder</a>
+                </li>
+                <li>
+                    <a href="#">Jobs</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">More ></a>
+                </li>
+                <li>
+                    <a href="#">Bestellen</a>
                 </li>
             </ul>
         </nav>
@@ -40,25 +73,43 @@
             <h1>Ons verhaal</h1>
             <h2>Terug in de tijd</h2>
 
-            <!-- <img src="afbeeldingen/mascotte.png" alt="retro mascotte van Dunkin' Donuts"> -->
+            <img src="afbeeldingen/mascotte.png" alt="retro mascotte van Dunkin' Donuts">
         </section>
 
-        <div class="dunkin">
-            <img src="afbeeldingen/meisje.gif" alt="gif van een meisje die een hap neemt van een donut">
-            <h2>Dunkin donuts</h2> <!--DIT IS HET CANVAS ELEMENT WAT MOET IK HIERMEE????-->
-            <img src="afbeeldingen/bakker.gif" alt="gif van een Dunkin' bakker">
-        </div>
+        <article class="dunkin">
 
-        <article>
+            <img src="afbeeldingen/meisje.gif" alt="gif van een meisje die een hap neemt van een donut">
+
+            <h2>
+                <span>D</span>
+                <span>u</span>
+                <span>n</span>
+                <span>k</span>
+                <span>i</span>
+                <span>n</span>
+                <span>'</span>
+                <span>D</span>
+                <span>o</span>
+                <span>n</span>
+                <span>u</span>
+                <span>t</span>
+                <span>s</span>
+            </h2>
+
+            <img src="afbeeldingen/bakker.gif" alt="gif van een Dunkin' bakker">
+        </article>
+
+        <section class="dunkinnederland">
             <img src="afbeeldingen/manmetdonutjas.gif"
                 alt="gif van een man die zijn jas open doet, daarin zitten donuts">
 
             <h2>Dunkin' Nederland!</h2>
             <p>Dunkin' opende aan het begin van 2017 de eerste Dunkin' Donuts-store in Nederland en in 2020 de eerste in
                 België. Het bedrijf kondigt aan dat het op het punt staat 'om Nederland en België te veroveren'.</p>
-        </article>
+        </section>
 
         <div class="dunkinthedonut">
+            <img src="afbeeldingen/sneeuw.gif" alt="sneeuwachtergrond" class="achtergrondwinter">
             <p>We call it dunkin' the donut.</p>
             <p>We call it dunkin' the donut.</p>
             <p>We call it dunkin' the donut.</p>
@@ -86,14 +137,83 @@
                 aan.</p>
         </section>
 
-        <div class="container">
+
             <img src="afbeeldingen/donuteten.png" alt="vrouw die een hap neemt van een donut">
             <img src="afbeeldingen/dunkinlogosquare.png" alt="Dunkin' Donuts logo vierkant">
-        </div>
+
 
         <h2>Store finder</h2>
+        <section class="storefinder">
+            <img src="afbeeldingen/dunkinkaart.png" alt="map van dunkin nederland">
+            <input type="text" onkeyup="myFunction()" placeholder="Enter adrress or zipcode..">
+            <p>20 KM</p>
 
-        <!--MAP INVOEGEN MET CANVAS ELEMENT - HOE MOET DAT???-->
+            <ul>
+                <li>
+                    <h3>Almere Stationsstraat</h3>
+                    <p>Stationsstraat 26</p>
+                    <p>Almere, Flevoland 1315 KJ</p>
+                    <p>NL</p>
+                    <p>088 377 8818</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Amsterdam Arena Boulevard</h3>
+                    <p>Johan Cruijff Boulevard 135</p>
+                    <p>Amsterdam, 1102 EJ</p>
+                    <p>NL</p>
+                    <p>088 377 8813</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Bataviastad</h3>
+                    <p>Bataviaplein 132</p>
+                    <p>Lelystad, Flevoland 8242 PN</p>
+                    <p>NL</p>
+                    <p>088 377 8829</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Brussels Airport</h3>
+                    <p>Leopoldlaan</p>
+                    <p>Zaventem, Vlaams Gewest 1930</p>
+                    <p>BE</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Den Bosch Markt</h3>
+                    <p>Markt 44</p>
+                    <p>Den Bosch, 1511 JX</p>
+                    <p>NL</p>
+                    <p>088 377 8850</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Den Haag Spuistraat</h3>
+                    <p>Spui 10b</p>
+                    <p>Den Haag, Zuid-Holland 251 BS</p>
+                    <p>NL</p>
+                    <p>088 377 8817</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Eindhoven piazza</h3>
+                    <p>Piazza 25</p>
+                    <p>Eindhoven, Noord-Brabant 5611 AE</p>
+                    <p>NL</p>
+                    <p>088 377 8811</p>
+                    <p>Open Now</p>
+                </li>
+                <li>
+                    <h3>Leiden Centraal station</h3>
+                    <p>Stationsplein 3B</p>
+                    <p>Leiden, 2312 AJ</p>
+                    <p>NL</p>
+                    <p>088 377 8843</p>
+                    <p>Open Now</p>
+                </li>
+            </ul>
+        </section>
 
         <div class="bestelknop">
             <a href="#">Order now</a>
@@ -105,10 +225,8 @@
 
         <img src="afbeeldingen/dunkinlogosquare.png" alt="vierkant logo van Dunkin Donuts">
 
-        <div class="kerstthema">
-            <h3>Christmas theme</h3>
-            <input type="checkbox" id="kerstthema">
-        </div>
+        <h3>Christmas theme</h3>
+        <input type="checkbox" id="kerstthema">
 
         <nav>
             <ul>
@@ -119,17 +237,20 @@
             </ul>
         </nav>
 
-        <ul>
+        <ul class="socialmedia">
             <li>
-                <a href="https://www.tiktok.com/@dunkin_nl"><img src="afbeeldingen/tiktokicon.png" alt="TikTok icoon"></a>
+                <a href="https://www.tiktok.com/@dunkin_nl"><img src="afbeeldingen/tiktokicon.png"
+                        alt="TikTok icoon"></a>
             </li>
 
             <li>
-                <a href="https://www.instagram.com/dunkindonutsnl/"><img src="afbeeldingen/instagramicon.png" alt="Instagram icoon"></a>
+                <a href="https://www.instagram.com/dunkindonutsnl/"><img src="afbeeldingen/instagramicon.png"
+                        alt="Instagram icoon"></a>
             </li>
 
             <li>
-                <a href="https://www.facebook.com/dunkindonutsnl"><img src="afbeeldingen/facebookicon.png" alt="Facebook icoon"></a>
+                <a href="https://www.facebook.com/dunkindonutsnl"><img src="afbeeldingen/facebookicon.png"
+                        alt="Facebook icoon"></a>
             </li>
         </ul>
 
