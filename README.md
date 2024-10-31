@@ -89,7 +89,7 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik ben lekker van start gegaan, ik ben blij met de website die ik heb gekozen en de opdrachten die we tot nu toe hebben gemaakt gaan goed. Ik heb al mijn html op de website gezet, maar ben nog niet begonnen met de css. Ik moet ook nog even goed controleren wanneer ik nou articles of sections moet gebruiken en wanneer ik nou wel een div mag gebruiken (of nooit?)
+  Ik ben lekker van start gegaan, ik ben blij met de website die ik heb gekozen en de opdrachten die we tot nu toe hebben gemaakt gaan goed. Ik ben wel begonnen met mijn html op de website te zetten, maar nog niet begonnen met de css. Ik moet ook nog even goed controleren wanneer ik nou articles of sections moet gebruiken en wanneer ik nou wel een div mag gebruiken (of nooit?)
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -114,26 +114,15 @@ Het eerste voortgangsgesprek had mijn groepje met de docent, we hebben de bovens
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik heb geen tijd gehad om veel verder te werken, wel heb ik nu alle html op de website staan en heb ik alles op Github gezet. Ik heb daarom ook niet heel veel vragen deze week. Ik ben zelf verder gaan werken aan mijn css.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+ Deze week waren er vooral veel specifieke vragen dus ik heb meegeluisterd met iedereen en dit heeft mij ook weer inzichten gegeven voor mijn eigen werk.
+ **Vraag 1** Hoe zorg ik ervoor dat het plaatje inzoomt zonder dat die meer ruimte meepakt en dus buiten mijn frame gaat staan? (vraag van Tessa)
+  
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
+  
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
@@ -161,26 +150,19 @@ Het eerste voortgangsgesprek had mijn groepje met de docent, we hebben de bovens
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben nog steeds bezig met mijn CSS, maar ik merk dat ik er heel lastig in kom. Vorig jaar vond ik het allemaal best te doen, maar ik merk dat dit vak me lastig af gaat. 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+**Vraag 1** Hoe maak ik de achtergrond op de hompagina?
+**Vraag 2** Hoe kan je een map op je website krijgen?
+**Vraag 3** Hoe werken custom properties?
+**Vraag 4** Kan ik meer hulp krijgen bij een grid?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Ik heb aan studentassistent Brechtje gevraagd of zij mij kon helpen met de achtergrond die op de homepagina zit tussen het bestel menu en de kop 'app jij m' al?'. Ik vond dit een hele lastige, omdat ik niet wist waar ik moest beginnen. Zij heeft me gelijk geholpen door te zeggen dat ik 2 div's kon gebruiken en deze dan achter de sections te plaatsen. Uiteindelijk is dit gelukt. Ik heb deze week ook geleerd hoe custom properties werken en dat is handig als ik straks een kertthema of light en dark mode wil maken voor een van mijn surface planes. Ik heb ook wat meer uitleg gekregen voor mijn grid en die heb ik nu op een aantal sections toe kunnen passen.
+<img src= readme-images/achtergrond.jpg alt="achtergrond gemaakt met div's">
 
 </details>
 
@@ -194,23 +176,42 @@ Het eerste voortgangsgesprek had mijn groepje met de docent, we hebben de bovens
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-image.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+ Nog niet heel veel, doordat ik nog niet zo ver ben gekomen heb ik voor mijn gevoel nog niet zo veel nieuws kunnen leren. Ik vond het wel fijn om ook bij andere mensen hun werk mee te kunnen kijken tijdens de feedback gesprekken, zodat ik daar wel van kon leren voor mijn eigen werk.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik heb het niet af kunnen krijgen waar ik heel erg van baal. Ik vond dit vak erg lastig en het duurde bij mij erg lang voordat ik erin kwam. Ik heb in mijn laatste feedback gesprek te horen gekregen dat alles er tot nu toe wel echt goed uit ziet alleen dat ik echt niet ver ben en dat ik hard door moet gaan werken. Ik heb de surface planes vastgesteld die ik ga maken, namelijk: de carousel op de homepagina, het kerstthema, een scrollanimatie, een animatie met keyframes en de storefinder op de about-pagina.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
+## Eindgesprek (HERKANSING)
 
+<details>
+  <summary>uitwerken voor eindgesprek</summary>
+
+  ### Je uitkomst - karakteristiek screenshots:
+  <img src="readme-images/dummy-image.jpg" width="375px" alt="uitomst opdracht 1">
+
+
+  ### Dit ging goed/Heb ik geleerd: 
+Voor de herfstvakantie heb ik nog een laatste feedback gesprek gehad voor de herkansing. Hier heb ik heel veel uit kunnen halen. Ik heb mijn surface planes besproken en deze werden goedgekeurd. Ik heb mijn laatste vragen gesteld over gedetailleerde dingen in mijn website. Ik heb mijn kerstthema afgemaakt en de carousel is ook goed gelukt. Verder heb ik de storefinder kunnen maken en hier ben ik heel blij mee, omdat ik daar het bangst voor was.
+
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
+
+  ### Dit was lastig/Is niet gelukt:
+De carousel gaat op de website van Dunkin' Donuts oneindig door, maar dit is mij echt niet meer gelukt. Ik heb heel veel iteraties gemaakt, maar ik kwam er niet uit. Ik vond de scroll animatie en het hamburger menu het aller lastigst om te maken, terwijl ik juist had verwacht dat dit me wel zou lukken. Mijn hamburgermenu heeft een submenu en ik kan daar weinig tutorials over vinden die ik zou kunnen toepassen op mijn website. 
+
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+</details>
 
 
 ## Bronnenlijst
