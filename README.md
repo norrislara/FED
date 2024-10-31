@@ -45,7 +45,7 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/about.jpg" width="375px" alt="omschrijving van de aboutpagina">
+  <img src="readme-images/about.JPG" width="375px" alt="omschrijving van de aboutpagina">
  
 </details>
 
