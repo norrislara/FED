@@ -172,20 +172,12 @@ Ik heb aan studentassistent Brechtje gevraagd of zij mij kon helpen met de achte
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-image.jpg" width="375px" alt="uitomst opdracht 1">
-
-
   ### Dit ging goed/Heb ik geleerd: 
  Nog niet heel veel, doordat ik nog niet zo ver ben gekomen heb ik voor mijn gevoel nog niet zo veel nieuws kunnen leren. Ik vond het wel fijn om ook bij andere mensen hun werk mee te kunnen kijken tijdens de feedback gesprekken, zodat ik daar wel van kon leren voor mijn eigen werk.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
-
   ### Dit was lastig/Is niet gelukt:
-  Ik heb het niet af kunnen krijgen waar ik heel erg van baal. Ik vond dit vak erg lastig en het duurde bij mij erg lang voordat ik erin kwam. Ik heb in mijn laatste feedback gesprek te horen gekregen dat alles er tot nu toe wel echt goed uit ziet alleen dat ik echt niet ver ben en dat ik hard door moet gaan werken. Ik heb de surface planes vastgesteld die ik ga maken, namelijk: de carousel op de homepagina, het kerstthema, een scrollanimatie, een animatie met keyframes en de storefinder op de about-pagina.
+  Ik heb het niet af kunnen krijgen waar ik heel erg van baal. Ik vond dit vak erg lastig en het duurde bij mij erg lang voordat ik erin kwam. Ik heb in mijn laatste feedback gesprek te horen gekregen dat alles er tot nu toe wel echt goed uit ziet alleen dat ik echt niet ver ben en dat ik hard door moet gaan werken. Ik heb de surface planes vastgesteld die ik ga maken, namelijk: de carousel op de homepagina, darkmode, een scrollanimatie, een animatie met keyframes en de storefinder op de about-pagina.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -199,7 +191,7 @@ Ik heb aan studentassistent Brechtje gevraagd of zij mij kon helpen met de achte
 
 
   ### Dit ging goed/Heb ik geleerd: 
-Voor de herfstvakantie heb ik nog een laatste feedback gesprek gehad voor de herkansing. Hier heb ik heel veel uit kunnen halen. Ik heb mijn surface planes besproken en deze werden goedgekeurd. Ik heb mijn laatste vragen gesteld over gedetailleerde dingen in mijn website. Ik heb mijn kerstthema afgemaakt en de carousel is ook goed gelukt. Verder heb ik de storefinder kunnen maken en hier ben ik heel blij mee, omdat ik daar het bangst voor was.
+Voor de herfstvakantie heb ik nog een laatste feedback gesprek gehad voor de herkansing. Hier heb ik heel veel uit kunnen halen. Ik heb mijn surface planes besproken en deze werden goedgekeurd. Ik heb mijn laatste vragen gesteld over gedetailleerde dingen in mijn website. Ik heb mijn darkmode afgemaakt en de carousel is ook goed gelukt. Verder heb ik de storefinder kunnen maken en hier ben ik heel blij mee, omdat ik daar het bangst voor was.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
