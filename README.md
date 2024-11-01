@@ -158,7 +158,8 @@ Ik ben nog steeds bezig met mijn CSS, maar ik merk dat ik er heel lastig in kom.
 
   ### Verslag van meeting
 Ik heb aan studentassistent Brechtje gevraagd of zij mij kon helpen met de achtergrond die op de homepagina zit tussen het bestel menu en de kop 'app jij m' al?'. Ik vond dit een hele lastige, omdat ik niet wist waar ik moest beginnen. Zij heeft me gelijk geholpen door te zeggen dat ik 2 div's kon gebruiken en deze dan achter de sections te plaatsen. Uiteindelijk is dit gelukt. Ik heb deze week ook geleerd hoe custom properties werken en dat is handig als ik straks een kertthema of light en dark mode wil maken voor een van mijn surface planes. Ik heb ook wat meer uitleg gekregen voor mijn grid en die heb ik nu op een aantal sections toe kunnen passen.
-<img src= readme-images/achtergrond.jpg alt="achtergrond gemaakt met div's">
+<img src= readme-images/achtergrond.png
+  alt="achtergrond gemaakt met div's">
 
 </details>
 
