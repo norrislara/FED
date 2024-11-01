@@ -56,14 +56,22 @@ main {
 }
 
 body.darkmode {
-    --roze: #cc231e;
-    --whitesmoke: #083458;
-    --oranje: #99d6ea;
-    --donkeroranje: #00589b;
-    --achtergrond: #34a65f;
-    --lichtroze: #F5624D;
-    --lichtblauw: #34a65f;
-    --blauw: #cc231e;
+    --roze: #c2187b;
+    --wit: #e0e0e0;
+    --whitesmoke: #cfcfcf;
+    --oranje: #e96e20;
+    --donkeroranje: #c35235;
+    --beige: #c7a680;
+    --lichtroze: #d94e9a;
+    --lichtblauw: #7fbcd1;
+    --blauw: #5da9d1;
+    --donkerblauw: #1a7bb5;
+    --grijs: #888888;
+    --lichtgrijs: #3a3a3a;
+    --donkergrijs: #4d4d4d;
+    --zwart: #181818;
+    --bruin: #704017;
+    --donkerbruin: #5a2f05;
 }
 
 body > div:first-of-type {
@@ -300,7 +308,7 @@ header nav:first-of-type ul li:first-of-type>img {
     width: auto;
 }
 
-header nav:first-of-type ul li:nth-of-type(2)>img {
+header nav:first-of-type ul li:nth-of-type(2) a img {
     max-height: 1.6em;
     width: auto;
 }
@@ -330,10 +338,15 @@ header nav:nth-of-type(2) div.inbeeld {
 }
 
 header nav:nth-of-type(2) ul li a {
-    padding: 0;
-    background-color: transparent;
     color: var(--donkerbruin);
     font-size: 2em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "dunkin sans display";
+    text-transform: uppercase;
+    margin-top: 1em;
 }
 
 header nav:nth-of-type(2) {
@@ -342,8 +355,7 @@ header nav:nth-of-type(2) {
     flex-direction: column;
 }
 
-header nav:nth-of-type(2) ul:first-of-type,
-.submenu {
+header nav:nth-of-type(2) ul:first-of-type{
     background-color: var(--wit);
     position: fixed;
     width: 100%;
@@ -352,8 +364,7 @@ header nav:nth-of-type(2) ul:first-of-type,
     transition: bottom 0.8s ease;
 }
 
-header nav:nth-of-type(2) ul:first-of-type.inbeeld,
-.has-submenu.active .submenu {
+header nav:nth-of-type(2) ul:first-of-type.inbeeld{
     bottom: -14%;
 }
 
@@ -416,20 +427,6 @@ main {
     border-radius: 20px;
     height: 53vh;
     object-fit: cover;
-}
-
-.achtergrondwinter {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-body.darkmode .achtergrondwinter {
-    display: block;
 }
 
 /* WE LOVE COFFEE KADER HOMEPAGINA */
@@ -550,6 +547,8 @@ body.darkmode .achtergrondwinter {
     position: relative;
     z-index: 1;
     padding-bottom: 2em;
+    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 3em;
 }
 
 .stappen h2 {
@@ -581,11 +580,11 @@ body.darkmode .achtergrondwinter {
     z-index: 5;
 }
 
-.stappen ul{
+.stappen ol{
     margin-bottom: 2em;
 }
 
-.stappen ul li {
+.stappen ol li {
     display: grid;
     grid-template-columns: 30% 70%;
     list-style-type: none;
@@ -595,7 +594,7 @@ body.darkmode .achtergrondwinter {
     margin: 0.8em;
 }
 
-.stappen ul li img {
+.stappen ol li img {
     grid-row: 1 / 3;
     align-self: center;
     width: 15vw;
@@ -605,18 +604,18 @@ body.darkmode .achtergrondwinter {
     background-color: var(--roze);
 }
 
-.stappen ul li:nth-of-type(2) img {
+.stappen ol li:nth-of-type(2) img {
     background-color: var(--oranje);
 }
 
-.stappen ul li h4 {
+.stappen ol li h4 {
     margin: 0;
     font-size: 1.2em;
     color: var(--roze);
     width: 70%;
 }
 
-.stappen ul li p {
+.stappen ol li p {
     grid-column: 2/3;
     margin: 0;
     color: var(--grijs);
@@ -626,7 +625,7 @@ body.darkmode .achtergrondwinter {
 .stappen a,
 .nieuwsitem1 a,
 .nieuwsitem2 a,
-nav ul li a,
+footer nav ul li a,
 .bestelknop a {
     display: flex;
     justify-content: center;
@@ -644,22 +643,6 @@ nav ul li a,
 .stappen a {
     margin: 1em;
     margin-bottom: 18em;
-    border-bottom-right-radius: 3em;
-    border-bottom-left-radius: 3em;
-}
-
-.stappen>img {
-    display: none;
-}
-
-body.darkmode .stappen>img {
-    width: 30%;
-    position: absolute;
-    left: 58%;
-    top: -1%;
-    z-index: 100;
-    transform: rotate(25deg);
-    display: block;
 }
 
 /* APP JIJ 'M AL? HOMEPAGINA */
@@ -947,17 +930,6 @@ body.darkmode .stappen>img {
     position: absolute;
     bottom: 14%;
     right: 37%;
-}
-
-.kerstboom {
-    display: none;
-}
-
-body.darkmode .kerstboom {
-    display: block;
-    width: 40%;
-    position: absolute;
-    top: 650%;
 }
 
 /* ABOUT PAGINA */
@@ -1312,7 +1284,7 @@ footer nav ul li a {
 
 footer h3 {
     font-size: 1em;
-    margin: 1em;
+    margin: .5em;
 }
 
 footer input {
@@ -1339,7 +1311,7 @@ footer input::after {
 }
 
 footer input:checked {
-    background-color: var(--donkerblauw);
+    background-color: var(--bruin);
 }
 
 footer input:checked::after {
