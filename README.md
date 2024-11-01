@@ -198,7 +198,9 @@ Voor de herfstvakantie heb ik nog een laatste feedback gesprek gehad voor de her
   ### Dit was lastig/Is niet gelukt:
 De carousel gaat op de website van Dunkin' Donuts oneindig door, maar dit is mij echt niet meer gelukt. Ik heb heel veel iteraties gemaakt, maar ik kwam er niet uit. Ik vond de scroll animatie en het hamburger menu het aller lastigst om te maken, terwijl ik juist had verwacht dat dit me wel zou lukken. Mijn hamburgermenu heeft een submenu en ik kan daar weinig tutorials over vinden die ik zou kunnen toepassen op mijn website. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="hamburgermenu">
+  <img src="readme-images/hamburgermenu2.png" width="375px" alt="submenu">
+  
 </details>
 
 
