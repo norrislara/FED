@@ -200,6 +200,8 @@ De carousel gaat op de website van Dunkin' Donuts oneindig door, maar dit is mij
 
   <img src="readme-images/hamburgermenu.png" width="375px" alt="hamburgermenu">
   <img src="readme-images/hamburgermenu2.png" width="375px" alt="submenu">
+  <img src="readme-images/hamburgermenu3.png" width="375px" alt="mijn hamburger menu, zonder submenu">
+
   
 </details>
 
