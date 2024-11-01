@@ -114,15 +114,6 @@ hamMenu.addEventListener("click", () => {
   socialMediaAchtergrond.classList.toggle('inbeeld');
 })
 
-document.addEventListener("DOMContentLoaded", function () {
-  const more = document.querySelector(".has-submenu > a");
-
-  more.addEventListener("click", function () {
-      this.parentElement.classList.toggle("active");
-  });
-
-});
-
 let loader = document.querySelector("body > div"); // Bron: https://www.youtube.com/watch?app=desktop&v=Yf5d_Zx3AaI
 
 window.addEventListener("load", function() {
