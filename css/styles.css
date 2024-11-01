@@ -34,6 +34,7 @@ body {
 
 main {
     overflow-x: hidden;
+    margin: 0;
 }
 
 :root {
@@ -401,12 +402,7 @@ header.scrolled nav:first-of-type {
     transform: translateY(-66%);
 }
 
-header nav:nth-of-type()
 /*MAIN*/
-
-main {
-    margin: 0;
-}
 
 .welovecoffee,
 .bestel,
