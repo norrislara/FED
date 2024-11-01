@@ -186,17 +186,13 @@ Ik heb aan studentassistent Brechtje gevraagd of zij mij kon helpen met de achte
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
+  ### Dit ging goed/Heb ik geleerd: 
+Voor de herfstvakantie heb ik nog een laatste feedback gesprek gehad voor de herkansing. Hier heb ik heel veel uit kunnen halen. Ik heb mijn surface planes besproken en deze werden goedgekeurd. Ik heb mijn laatste vragen gesteld over gedetailleerde dingen in mijn website. Ik heb mijn darkmode afgemaakt en de carousel is ook goed gelukt. Verder heb ik de storefinder kunnen maken en hier ben ik heel blij mee, omdat ik daar het bangst voor was.
+
   <img src="readme-images/lightmode.png" width="375px" alt="lightmode">
   <img src="readme-images/lightmode2.png" width="375px" alt="lightmode">
   <img src="readme-images/darkmode.png" width="375px" alt="darkmode">
   <img src="readme-images/darkmode2.png" width="375px" alt="darkmode">
-
-
-  ### Dit ging goed/Heb ik geleerd: 
-Voor de herfstvakantie heb ik nog een laatste feedback gesprek gehad voor de herkansing. Hier heb ik heel veel uit kunnen halen. Ik heb mijn surface planes besproken en deze werden goedgekeurd. Ik heb mijn laatste vragen gesteld over gedetailleerde dingen in mijn website. Ik heb mijn darkmode afgemaakt en de carousel is ook goed gelukt. Verder heb ik de storefinder kunnen maken en hier ben ik heel blij mee, omdat ik daar het bangst voor was.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
