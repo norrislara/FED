@@ -73,7 +73,7 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
   <img src="readme-images/about-pagina.jpg" width="375px" alt="breakdown van de about pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/hamburgermenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/hamburger-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
   
 </details>
 
