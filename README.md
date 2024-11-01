@@ -69,14 +69,12 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/homepagina.jpg" width="375px" alt="breakdown van de home pagina">
+  <img src="readme-images/about-pagina.jpg" width="375px" alt="breakdown van de about pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  <img src="readme-images/hamburgermenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  
 </details>
 
 
