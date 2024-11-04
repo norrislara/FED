@@ -36,7 +36,7 @@ Surface Planes
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-(https://web.archive.org/web/20240924174133/https://www.dunkin.nl/)
+(https://www.dunkin.nl/)
 Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin' donuts
 
   #### Screenshot(s) van de eerste pagina (small screen): 
