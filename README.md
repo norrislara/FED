@@ -138,9 +138,15 @@ Ik heb geen tijd gehad om veel verder te werken, wel heb ik nu alle html op de w
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
+  <img src="readme-images/pagina1(2).png" alt="pagina 1 toegankelijkheidstest">
+<img src="readme-images/pagina2(2).png" alt="pagina 1 toegankelijkheidstest">
+<img src="readme-images/pagina3(2).png" alt="pagina 1 toegankelijkheidstest">
+<img src="readme-images/pagina4(2).png" alt="pagina 1 toegankelijkheidstest">
+<img src="readme-images/pagina5(2).png" alt="pagina 1 toegankelijkheidstest">
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  
+  Ik heb alle onderdelen die bij de afbeeldingen passen verbeterd in mijn code. In mijn code heb ik wel een aantal dingen niet zoals high contrast mode of de tekst vergroten, maar als ik verder zou gaan met dit project had ik dit wel nog toe kunnen voegen.
 
 </details>
 
