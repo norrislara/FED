@@ -63,7 +63,8 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
 <img src="readme-images/pagina5.png" alt="pagina 1 toegankelijkheidstest">
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen: 
+  De Dunkin' Donuts website is over het algemeen best toegankelijk, ook voor mobiel formaat. Het enige punt waar ze een beetje de mist in gaat is bij de afbeeldingen. Niet alle afbeeldingen hebben alt-tekst, ook voor de kaarten is er geen alt-tekst. Dit is een erg belangrijk onderdeel voor screen-readers, dus dit is iets waar ik op kan gaan letten met het maken van mijn eigen Dunkin' donuts website. Ook wordt er geen gebruik van ul/ol lists.
 
 </details>
 
@@ -139,6 +140,7 @@ Ik heb geen tijd gehad om veel verder te werken, wel heb ik nu alle html op de w
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  
 
 </details>
 
