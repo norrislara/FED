@@ -1065,20 +1065,17 @@ footer nav ul li a,
     font-family: "Dunkin sans display";
     width: 100%;
     white-space: nowrap;
-    /* Zorg dat de tekst in één regel doorloopt zonder op een nieuwe regel te springen */
-    transform: rotate(8deg);
     line-height: 1;
     text-transform: uppercase;
+    position: relative;
 }
 
 .dunkinthedonut {
-    padding: 2em 0;
+    padding: 10em 0;
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
-.dunkinthedonut {
-    margin: 10em 0;
-}
 
 /*Teksten*/
 
