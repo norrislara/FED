@@ -1,10 +1,14 @@
 
-const switchTheme = document.querySelector("footer input");  // Bron: https://dev.to/daveyhert/how-to-implement-a-dark-mode-with-css-and-3-simple-lines-of-javascript-576
+// Loading animatie
+let loader = document.querySelector("body > div"); // Bron: https://www.youtube.com/watch?app=desktop&v=Yf5d_Zx3AaI
 
-switchTheme.addEventListener("click", function () {
-  document.body.classList.toggle("darkmode");
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 3000);
 });
 
+// Header
 const header = document.querySelector("header");
 
 if (header) {
@@ -17,6 +21,22 @@ if (header) {
   });
 }
 
+// Hamburger menu
+const hamMenu = document.querySelector("header nav:first-of-type ul li:nth-of-type(3)");
+const offScreenMenu = document.querySelector('header nav:nth-of-type(2) ul');
+const kleurVerandering = document.querySelector('header nav:first-of-type ul');
+const stoptScrollen = document.querySelector('body');
+const socialMediaAchtergrond = document.querySelector('header nav:nth-of-type(2) div');
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle('inbeeld');
+  offScreenMenu.classList.toggle('inbeeld');
+  kleurVerandering.classList.toggle('inbeeld');
+  stoptScrollen.classList.toggle('inbeeld');
+  socialMediaAchtergrond.classList.toggle('inbeeld');
+})
+
+// Carousel
 //Ik heb met chatgpt mijn code verbeterd door de console.errors toe te voegen, zodat de code zich maar op 1 pagina toepast
 const volgendeButton = document.querySelector('.ddnieuws div img:nth-of-type(2)');
 const vorigeButton = document.querySelector('.ddnieuws div img:first-of-type');
@@ -51,6 +71,7 @@ if (!vorigeButton || !volgendeButton) {
   }
 }
 
+// Scroll animatie GIF's
 //Ik heb met chatgpt mijn code verbeterd door de console.errors toe te voegen, zodat de code zich maar op 1 pagina toepast
 
 const gifMeisje = document.querySelector('.dunkin img:first-of-type'); // Bron: https://chatgpt.com/
@@ -83,7 +104,7 @@ if (!gifMeisje || !gifBakker) {
   });
 }
 
-
+// Scroll animatie Dunkin donuts
 const letters = document.querySelectorAll('.dunkin h2 span');
 const interval = 40;
 const startPunt = 200;
@@ -100,28 +121,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-const hamMenu = document.querySelector("header nav:first-of-type ul li:nth-of-type(3)");
-const offScreenMenu = document.querySelector('header nav:nth-of-type(2) ul');
-const kleurVerandering = document.querySelector('header nav:first-of-type ul');
-const stoptScrollen = document.querySelector('body');
-const socialMediaAchtergrond = document.querySelector('header nav:nth-of-type(2) div');
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle('inbeeld');
-  offScreenMenu.classList.toggle('inbeeld');
-  kleurVerandering.classList.toggle('inbeeld');
-  stoptScrollen.classList.toggle('inbeeld');
-  socialMediaAchtergrond.classList.toggle('inbeeld');
-})
-
-let loader = document.querySelector("body > div"); // Bron: https://www.youtube.com/watch?app=desktop&v=Yf5d_Zx3AaI
-
-window.addEventListener("load", function() {
-    setTimeout(function() {
-        loader.style.display = "none"; 
-    }, 3000);
-});
-
+// Storefinder
 function myFunction() { // Bron: https://www.w3schools.com/howto/howto_js_filter_lists.asp
 
   var input, filter, ul, li, a, i, txtValue;
@@ -140,3 +140,23 @@ function myFunction() { // Bron: https://www.w3schools.com/howto/howto_js_filter
     }
   }
 }
+
+// Scroll animatie Dunkin the donut
+const paragraphs = document.querySelectorAll('.dunkinthedonut p');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+  paragraphs.forEach((p, index) => {
+    const direction = document.querySelector('.dunkinthedonut p') ? -0.5 : 0.5;
+
+    p.style.transform = `translateX(${scrollPosition * 0.5 * direction}px) rotate(8deg)`;
+  });
+});
+
+// Dark mode
+const switchTheme = document.querySelector("footer input");  // Bron: https://dev.to/daveyhert/how-to-implement-a-dark-mode-with-css-and-3-simple-lines-of-javascript-576
+
+switchTheme.addEventListener("click", function () {
+  document.body.classList.toggle("darkmode");
+});
