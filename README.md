@@ -56,6 +56,12 @@ Ik ga focussen op de surface planes die te vinden zijn op de website van Dunkin'
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+<img src="pagina1.png" alt="pagina 1 toegankelijkheidstest">
+<img src="pagina2.png" alt="pagina 1 toegankelijkheidstest">
+<img src="pagina3.png" alt="pagina 1 toegankelijkheidstest">
+<img src="pagina4.png" alt="pagina 1 toegankelijkheidstest">
+<img src="pagina5.png" alt="pagina 1 toegankelijkheidstest">
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
